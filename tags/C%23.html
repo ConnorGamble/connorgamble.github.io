@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="app.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+    </head>
+
+<body class="bg-gray-950 font-sans text-gray-200"><div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 "><div class="flex h-screen flex-col justify-between"><header class="flex items-center justify-between py-10"><div><a href><div class="flex items-center justify-between"><div class=" h-6 text-2xl font-semibold sm:block text-primary-500">Connor Gamble</div></div></a></div>
+    <div class="flex items-center space-x-4 leading-5 sm:space-x-6"><a href="" class="hidden font-medium text-gray-100 sm:block">Home
+                </a><a href="projects" class="hidden font-medium text-gray-100 sm:block">Projects
+                </a><button id="toggle-button" aria-label="Toggle Menu" class="sm:hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-8 w-8 text-gray-100"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></button>
+        <div id="mobile-menu" class="fixed left-0 top-0 z-10 h-full w-full translate-x-full transform   duration-300 ease-in-out bg-gray-950 opacity-[0.98]"><div class="flex justify-end"><button id="close-mobile-menu-button" class="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-gray-100"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button></div>
+            <nav class="fixed mt-8 h-full"><div class="px-12 py-4"><a href="" class="text-2xl font-bold tracking-widest text-gray-100">Home
+                            </a></div><div class="px-12 py-4"><a href="projects" class="text-2xl font-bold tracking-widest text-gray-100">Projects
+                            </a></div></nav></div></div></header>
+<script>
+    //👎 but what can I do? It's a static html. I can't use C# here.
+     const toggleMobileMenu = () => document.querySelector('#mobile-menu').classList.toggle('translate-x-full');
+
+     document.querySelector('#toggle-button').addEventListener('click', toggleMobileMenu);
+     document.querySelector('#close-mobile-menu-button').addEventListener('click', toggleMobileMenu);
+</script>
+
+        <main class="mb-auto"><div class="divide-y divide-gray-700"><div class="space-y-2 pb-8 pt-6 md:space-y-5"><h1 class="font-sans md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl">C#</h1>
+        <p class="text-lg leading-7 text-gray-400">
+            Blog posts tagged by
+            <span class="text-primary-300">C#</span></p></div>
+    <ul class="divide-y divide-gray-700"><li class="py-12"><article><div class="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0 xl:gap-8"><div class="space-y-4"><dl><dt class="sr-only">Published on</dt>
+                            <dd class="text-base font-medium leading-6 text-gray-400"><time datetime="2025-10-14T00:00:00.000">October 14, 2025</time></dd></dl><div><img src="Content/Blog/media/ABAA_Calling.png" alt="ABAA - The agility tracking website" class="w-full h-32 object-cover rounded-lg shadow-md" /></div></div>
+
+                    <div class="space-y-5 xl:col-span-3" style="margin-left:10px"><div class="space-y-6"><div><h2 class="text-2xl font-bold leading-8 tracking-tight"><a class="text-gray-100" href="projects/ABAA-Tracking">ABAA - The agility tracking website</a></h2>
+                                <div class="flex flex-wrap mt-3"><a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/Projects">Projects</a><a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/Blazor">Blazor</a><a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/.Net">.Net</a><a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/C#">C#</a></div></div>
+                            <div class="prose max-w-none text-gray-400">A Blazor application which is used to record agility dog class times as well as help manage the event.</div></div>
+                        <div class="text-base font-medium leading-6"><a class="text-primary-500 hover:text-primary-400" aria-label="Read &quot;ABAA - The agility tracking website&quot;" href="projects/ABAA-Tracking">Read more →</a></div></div></div></article></li></ul></div></main>
+
+        <footer><div class="mt-16 flex flex-col items-center"><div class="mb-3 flex space-x-4"><img src="/Tickle.png"></div>
+                <div class="mb-2 flex space-x-2 text-sm text-gray-400"><a target="_blank" rel="noopener noreferrer" href="https://github.com/BlazorStatic/BlazorStatic"> Built with Blazor Static</a>
+                    <div>•</div>
+                    <div>© 2025</div></div></div></footer></div></div>
+        </body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/csharp.min.js"></script>
+<script>
+    // Initialize highlight.js when DOM is ready and after potential dynamic content loads
+    document.addEventListener('DOMContentLoaded', function() {
+        hljs.highlightAll();
+    });
+
+    // For static generated pages, also run immediately
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+            hljs.highlightAll();
+        });
+    } else {
+        hljs.highlightAll();
+    }
+
+    // Re-highlight when navigating in Blazor (for SPA behavior)
+    window.addEventListener('popstate', function() {
+        setTimeout(function() {
+            hljs.highlightAll();
+        }, 100);
+    });
+</script></html>
