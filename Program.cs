@@ -1,4 +1,5 @@
 using BlazorStatic;
+using BlazorStatic.Services;
 using Portfolio.Components;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,12 +9,21 @@ builder.WebHost.UseStaticWebAssets();
 builder.Services.AddBlazorStaticService(opt =>
 {
     //opt. //check to change the defaults
+    opt.OutputFolderPath = "output";
+    opt.SitemapOutputFolderPath = "output/sitemap";
 }
 ).AddBlazorStaticContentService<BlogFrontMatter>();
 
 builder.Services.AddRazorComponents();
 
 var app = builder.Build();
+
+var blazorStaticContentService = app.Services.GetRequiredService<BlazorStaticContentService<BlogFrontMatter>>();
+foreach (var post in blazorStaticContentService.Posts)
+{
+    app.UseBlazorStaticGenerator(shutdownApp: !app.Environment.IsDevelopment());
+}
+
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

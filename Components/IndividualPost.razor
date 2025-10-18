@@ -1,4 +1,5 @@
-﻿@using BlazorStatic
+﻿@page "/blog/{FileName}"
+@using BlazorStatic
 @using System.Globalization
 @using BlazorStatic.Services
 @using System.Text.RegularExpressions
@@ -177,7 +178,6 @@
     [Parameter] public string? FileName { get; set; }
     [Parameter] public Post<BlogFrontMatter>? post { get; set; }
 
-
     private string? ExtractFirstImageUrl(string htmlContent)
     {
         if (string.IsNullOrEmpty(htmlContent))
@@ -189,5 +189,17 @@
             return match.Groups[1].Value;
         }
         return null;
+    }
+
+
+    protected override void OnParametersSet()
+    {
+        // Find the post by filename
+        post = blazorStaticContentService.Posts.FirstOrDefault(p => p.Url == FileName);
+
+        if (post is null)
+        {
+            throw new Exception($"Post not found: {FileName}");
+        }
     }
 }
