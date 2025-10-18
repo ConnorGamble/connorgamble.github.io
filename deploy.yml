@@ -1,7 +1,7 @@
 ﻿on:
   push:
     branches:
-      - main  # or your default branch name
+      - main
 
 permissions:
   contents: write
@@ -9,6 +9,9 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: .
 
     steps:
       - name: Checkout repository
