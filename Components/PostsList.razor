@@ -62,6 +62,7 @@
 
     [Parameter] public List<Post<BlogFrontMatter>>? Posts { get; set; }
     [Parameter] public int? MaxPosts { get; set; }
+    [Parameter] public string PostType { get; set; }
 
     protected override void OnInitialized()
     {
@@ -71,7 +72,7 @@
         {
             if (MaxPosts.HasValue && MaxPosts > 0)
             {
-                posts = posts.OrderByDescending(c => c.FrontMatter.Published).Take(MaxPosts.Value).ToList();
+                posts = posts.Where(x => x.Tags.First().Name == PostType).OrderByDescending(c => c.FrontMatter.Published).Take(MaxPosts.Value).ToList();
             }
             else
             {

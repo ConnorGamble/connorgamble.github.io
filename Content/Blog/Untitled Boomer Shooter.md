@@ -46,3 +46,6 @@ TODO: Side by side comparison
 Straight away you can feel the difference, it's only a subtle tilt and this natually introduces it's own challenges since when I was developing this since initially I had a hitscan line beaming out of the characters face to be the shot so that had to change since it tilted with the camera. Not ideal. 
 
 Only thing left is getting a decent jump. There is a jump mechanic which I have implemented but it's quite small at the moment. I'm imagining it'll just need to go a touch higher but want to spend time making sure it feels right rather than just going up.
+
+## Guns. Lots of guns. 
+Can't have a shooter without a weapon! And usually, Boomer shooters have an array of weapons to choose from so it was important that you've got some snappy switching.
