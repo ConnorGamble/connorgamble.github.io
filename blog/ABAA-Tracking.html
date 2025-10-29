@@ -21,10 +21,12 @@
 <body class="bg-gray-950 font-sans text-gray-200"><div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 "><div class="flex h-screen flex-col justify-between"><header class="flex items-center justify-between py-10"><div><a href><div class="flex items-center justify-between"><div class=" h-6 text-2xl font-semibold sm:block text-primary-500">Connor Gamble</div></div></a></div>
     <div class="flex items-center space-x-4 leading-5 sm:space-x-6"><a href="" class="hidden font-medium text-gray-100 sm:block">Home
                 </a><a href="projects" class="hidden font-medium text-gray-100 sm:block">Projects
+                </a><a href="personal" class="hidden font-medium text-gray-100 sm:block">Personal
                 </a><button id="toggle-button" aria-label="Toggle Menu" class="sm:hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-8 w-8 text-gray-100"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></button>
         <div id="mobile-menu" class="fixed left-0 top-0 z-10 h-full w-full translate-x-full transform   duration-300 ease-in-out bg-gray-950 opacity-[0.98]"><div class="flex justify-end"><button id="close-mobile-menu-button" class="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-gray-100"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button></div>
             <nav class="fixed mt-8 h-full"><div class="px-12 py-4"><a href="" class="text-2xl font-bold tracking-widest text-gray-100">Home
                             </a></div><div class="px-12 py-4"><a href="projects" class="text-2xl font-bold tracking-widest text-gray-100">Projects
+                            </a></div><div class="px-12 py-4"><a href="personal" class="text-2xl font-bold tracking-widest text-gray-100">Personal
                             </a></div></nav></div></div></header>
 <script>
     //👎 but what can I do? It's a static html. I can't use C# here.
@@ -80,12 +82,12 @@ Along with some authentication so that only event staff can action things on the
 <h3 id="calling-event-staff">Calling (event staff)</h3>
 <p>Essentially, it's a queue management page.
 When dogs are waiting to compete, they queue up at the ring and then the caller will use this page to add them to the queue so the person who is scriming can select the next participant.
-<img src="Content/Blog/media/ABAA_Calling.png" alt="Calling" /></p>
+<img src="Content/Blog/media//ABAA/Calling.png" alt="Calling" /></p>
 <h3 id="scriming-event-staff">Scriming (event staff)</h3>
 <p>Scriming is the act of recording a dogs time going around the course. This user will initially be presented with the current dogs which are queued up for them to scrime. (this is directly fed from the calling page as these two people often work in tandem)
-<img src="Content/Blog/media/ABAA_ScrimeQueue.png" alt="Scriming" /></p>
+<img src="Content/Blog/media/ABAA/ScrimeQueue.png" alt="Scriming" /></p>
 <p>Touching on one of the handlers will present the user with a process handler dialog. On this screen they can select the person who is running the course which will present them with the following dialog:
-<img src="Content/Blog/media/ABAA_ScrimeProcessHandler.png" alt="Scriming Process Handler" /></p>
+<img src="Content/Blog/media/ABAA/ScrimeProcessHandler.png" alt="Scriming Process Handler" /></p>
 <p>From this dialog they can basically enter how the dog did in their class.
 In an ideal world, they would only need to enter a time but in agility the dog can knock poles, enter weaves incorrectly and other things which negatively impact the result of the run.
 So from this view they can add faults (ie knocking poles) and refusals (when the dog doesn't want to do something or ignores a command)
@@ -93,14 +95,14 @@ Functionally, they act the same, a refusal is equal to 5 faults. But if there ar
 The last option, NFC, stands for Not For Competition which is where a dog is just going for fun so they don't have a result but they still need to be marked as having done their run.</p>
 <h3 id="dog-management-event-staff">Dog management (event staff)</h3>
 <p>Dog management is pretty simple, you can see the big list of competing dogs. The pencil just gives you the ability to edit their details (for instance if a name was spelt incorrectly, or they change class)
-<img src="Content/Blog/media/ABAA_CompetingDogs.png" alt="Competing Dogs" /></p>
+<img src="Content/Blog/media/ABAA/CompetingDogs.png" alt="Competing Dogs" /></p>
 <h3 id="ring-management-everybody">Ring management (everybody)</h3>
 <p>Ring management is also pretty straight forward, it just displays some information regarding the state of the rings at the show, such as the status of the ring as well as the height and class running.
 This information is then used in a banner which is displayed in the nav menu so that people attending the show can see the status of rings at a glance.
-<img src="Content/Blog/media/ABAA_RingManagement.png" alt="Ring Management" /></p>
+<img src="Content/Blog/media/ABAA/RingManagement.png" alt="Ring Management" /></p>
 <h3 id="result-viewing-everybody">Result viewing (everybody)</h3>
 <p>Can view the results for the given class, not a lot to say really! Event staff also have the ability to edit results in case something seems off!
-<img src="Content/Blog/media/ABAA_Results.png" alt="Results" /></p>
+<img src="Content/Blog/media/ABAA/Results.png" alt="Results" /></p>
 <h3 id="anything-else">Anything else?</h3>
 <p>If you read all the above, congrats!
 There's nothing else really to note that's not been covered above about the website but if you wanted a bit of trivia, I used this website to propose to my now fiancee in 2024!</p>
