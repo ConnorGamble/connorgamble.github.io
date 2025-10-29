@@ -38,14 +38,14 @@ Seeing as you asked so nicely, how could I resist?
 ### Calling (event staff)
 Essentially, it's a queue management page. 
 When dogs are waiting to compete, they queue up at the ring and then the caller will use this page to add them to the queue so the person who is scriming can select the next participant.
-![Calling](media/ABAA_Calling.png)
+![Calling](media//ABAA/Calling.png)
 
 ### Scriming (event staff)
 Scriming is the act of recording a dogs time going around the course. This user will initially be presented with the current dogs which are queued up for them to scrime. (this is directly fed from the calling page as these two people often work in tandem)
-![Scriming](media/ABAA_ScrimeQueue.png)
+![Scriming](media/ABAA/ScrimeQueue.png)
 
 Touching on one of the handlers will present the user with a process handler dialog. On this screen they can select the person who is running the course which will present them with the following dialog:
-![Scriming Process Handler](media/ABAA_ScrimeProcessHandler.png)
+![Scriming Process Handler](media/ABAA/ScrimeProcessHandler.png)
 
 From this dialog they can basically enter how the dog did in their class. 
 In an ideal world, they would only need to enter a time but in agility the dog can knock poles, enter weaves incorrectly and other things which negatively impact the result of the run. 
@@ -55,16 +55,16 @@ The last option, NFC, stands for Not For Competition which is where a dog is jus
 
 ### Dog management (event staff)
 Dog management is pretty simple, you can see the big list of competing dogs. The pencil just gives you the ability to edit their details (for instance if a name was spelt incorrectly, or they change class)
-![Competing Dogs](media/ABAA_CompetingDogs.png)
+![Competing Dogs](media/ABAA/CompetingDogs.png)
 
 ### Ring management (everybody)
 Ring management is also pretty straight forward, it just displays some information regarding the state of the rings at the show, such as the status of the ring as well as the height and class running.
 This information is then used in a banner which is displayed in the nav menu so that people attending the show can see the status of rings at a glance.
-![Ring Management](media/ABAA_RingManagement.png)
+![Ring Management](media/ABAA/RingManagement.png)
 
 ### Result viewing (everybody)
 Can view the results for the given class, not a lot to say really! Event staff also have the ability to edit results in case something seems off!
-![Results](media/ABAA_Results.png)
+![Results](media/ABAA/Results.png)
 
 ### Anything else? 
 If you read all the above, congrats! 
