@@ -65,4 +65,4 @@ I wanted to:
 - Fleshed out setup instructions, walking you through setup in-app instead of redirecting to a website
 
 ## Discontinuation
-Through finishing the campaign and moving onto other passtimes, the project was eventually just never picked up again. I still have all the sourcecode
+Through finishing the campaign and moving onto other passtimes, the project was eventually just never picked up again. I still have all the sourcecode, though!
