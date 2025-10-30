@@ -38,7 +38,7 @@ Seeing as you asked so nicely, how could I resist?
 ### Calling (event staff)
 Essentially, it's a queue management page. 
 When dogs are waiting to compete, they queue up at the ring and then the caller will use this page to add them to the queue so the person who is scriming can select the next participant.
-![Calling](media//ABAA/Calling.png)
+![Calling](media/ABAA/Calling.png)
 
 ### Scriming (event staff)
 Scriming is the act of recording a dogs time going around the course. This user will initially be presented with the current dogs which are queued up for them to scrime. (this is directly fed from the calling page as these two people often work in tandem)
