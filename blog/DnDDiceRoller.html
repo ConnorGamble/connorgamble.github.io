@@ -11,11 +11,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
     <title>DnD Dice Roller</title>
-        <meta name="description" content="Discord and Dragons" />
+        <meta name="description" content="Discord and Dragons and outdated UI" />
         <meta name="keywords" content="Projects, .Net, C#, Windows Forms" />
         <meta name="author" content="" /><meta property="og:type" content="article">
         <meta property="og:title" content="DnD Dice Roller" />
-        <meta property="og:description" content="Discord and Dragons" />
+        <meta property="og:description" content="Discord and Dragons and outdated UI" />
         <meta property="article:published_time" content="2020-06-23T00:00:00.0000000" /><meta property="article:tag" content="Projects" /><meta property="article:tag" content=".Net" /><meta property="article:tag" content="C#" /><meta property="article:tag" content="Windows Forms" /></head>
 
 <body class="bg-gray-950 font-sans text-gray-200"><div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 "><div class="flex h-screen flex-col justify-between"><header class="flex items-center justify-between py-10"><div><a href><div class="flex items-center justify-between"><div class=" h-6 text-2xl font-semibold sm:block text-primary-500">Connor Gamble</div></div></a></div>
@@ -62,10 +62,50 @@ That's when the idea came to me, what if you could just press a button from a lo
 <h2 id="how-it-was-made-what-it-used">How it was made, what it used</h2>
 <p>Now I didn't know <em>jack</em> about windows applications at the time. I was fresh out of university which had covered some of the basics so I just went &quot;it's just for my small little friend group anyway, who cares how it looks&quot;
 Which is why when you see some screenshots, I ask you take the same approach 😉</p>
-<p>As the tags suggest, it was built using C# and Windows Forms</p>
+<p>As the tags suggest, it was built using C# and Windows Forms:</p>
+<p><img src="Content/Blog/media/DnDDiceRoller/RollingPageOld.png" alt="DnD Dice roller old" /></p>
+<p>It went through a couple of iterations, first thing which was added was of course, a dark mode to prevent you being flashbanged.
+But as we were using it naturally we'd be like &quot;oh, it would be cool if it could do X&quot; etc.</p>
+<p>Now the player characters were... a special bunch. They liked to do... strange things which resulted in a lot of laughs and some damaging consequences.</p>
+<h2 id="new-and-shiny">New and shiny</h2>
+<p><img src="Content/Blog/media/DnDDiceRoller/RollingPage.png" alt="DnD Dice roller dark mode" /></p>
+<p>So the massive detail is that the large banner was removed and replaced with a working, death counter and combat section.
+This allowed players to input all of their modifiers etc so they can just press a single button and the app works it all out.</p>
+<p>It also added some bits of polish, rolling a natural 1 (critical failure) would now highlight the number in red, with natural 20 (critical success) being green.</p>
+<p>It also added a couple of different pages.</p>
+<ul>
+<li>A character sheet page</li>
+<li>A settings page</li>
+</ul>
+<h2 id="character-page">Character page</h2>
+<p><img src="Content/Blog/media/DnDDiceRoller/CharacterSheet.png" alt="DnD Dice roller character sheet" />
+Not really too much to say on this, it's basically just a load of textboxes, it's only purpose is just to keep track of stuff which you would otherwise keep track of on your character sheet.
+The final page however...</p>
 <h2 id="discord-integration">Discord integration</h2>
+<p>Discord integration, as someone fresh out of university was absolutely nuts to me. But I managed to make it so that pressing the button on a roll would also tell a bot to write the result in a Discord channel of the players choosing.
+It also had the option to make a &quot;DM only roll&quot; which would instead send your chosen DM a direct message, for those rolls you try and keep a little more conspicuous. (which for this group, was pickpocketing each other)
+<img src="Content/Blog/media/DnDDiceRoller/SetupPage.png" alt="DnD Dice roller settings" /></p>
+<p>The Bot Setup and How To just redirected to web pages on my old (and now long gone) website. Way back machine has a version of it, but it's not exactly viewer friendly. (not at all, frankly)
+Suppose I could pull out the html... But it'd likely be out of date anyway!</p>
 <h2 id="plans">Plans</h2>
+<p>I did have other plans for it, which I might come back to one day, modernising the entire thing.</p>
+<p>I wanted to:</p>
+<ul>
+<li>Add a tab for any DM's tools
+<ul>
+<li>Allowing them to store stat blocks or take their own notes</li>
+<li>Integration of some sort of music or video player which allows the DM to set the scene through the bot playing music in the voice channel</li>
+</ul>
+</li>
+<li>Unique and random text which is output to Discord.
+<ul>
+<li>Like having variations for messages of all kinds, leaning into the situation. Such as death throws taking into account how close you are to actually dying and such</li>
+</ul>
+</li>
+<li>Fleshed out setup instructions, walking you through setup in-app instead of redirecting to a website</li>
+</ul>
 <h2 id="discontinuation">Discontinuation</h2>
+<p>Through finishing the campaign and moving onto other passtimes, the project was eventually just never picked up again. I still have all the sourcecode</p>
 </div></div></main></div>
 
     
