@@ -1,6 +1,6 @@
 ﻿---
 title: DnD Dice Roller
-lead: Discord and Dragons and outdated UI
+lead: Dungeons, Dragons and outdated UI
 published: 2020-06-23
 tags: [ Projects, .Net , C#, Windows Forms]
 ---
