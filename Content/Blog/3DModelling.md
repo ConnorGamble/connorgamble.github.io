@@ -2,7 +2,7 @@
 title: 3D modelling
 lead: My adventures into the lands of modelling
 published: 2025-10-14
-tags: [ Personal ]
+tags: [ Personal, Blender, 3DS Max ]
 ---
 
 # The beginnings
@@ -19,7 +19,7 @@ I spent weeks modelling these ships, learning the software as I went along. It w
 Here are the final renders of these models: 
 ![TIE Fighter](media/3DModelling/TIEFighter.png)
 ![N1 Starfighter](media/3DModelling/N1Fighter.png)
-![Snowspeeder](media/3DModelling/SnowSpeeder.png)
+![Snowspeeder](media/3DModelling/Snowspeeder.png)
 
 A more in-depth blog I kept during making these can be found [here](https://arusstarwarsmodellingproject.blogspot.com/)
 
