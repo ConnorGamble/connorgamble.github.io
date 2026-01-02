@@ -1,7 +1,7 @@
 ---
 title: Citizen Sleeper
 lead:  A Cyberpunk TTRPG with an incredible atmosphere
-published: 2020-01-01
+published: 2026-01-02
 tags: [ GameReviews ]
 ---
 ![Citizen Sleeper Header](https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1578650/03a8446c1df268f697eb2e00a3cfd98f5d07eb31/capsule_616x353.jpg)
