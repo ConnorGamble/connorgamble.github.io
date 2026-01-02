@@ -117,47 +117,51 @@
         line-height: 1.8;
     }
 
-        .blog-content h2 {
-            @@apply text-2xl font-bold text-foreground mt-12 mb-6;
-            scroll-margin-top: 100px; /* For smooth scrolling to headings */
+    .blog-content h2 {
+        @@apply text-2xl font-bold text-foreground mt-12 mb-6;
+        scroll-margin-top: 100px; /* For smooth scrolling to headings */
+    }
+
+    .blog-content h3 {
+        @@apply text-xl font-semibold text-foreground mt-8 mb-4;
+        scroll-margin-top: 100px;
+    }
+
+    .blog-content p {
+        @@apply mb-6 text-gray-300 leading-relaxed;
+    }
+
+    .blog-content code {
+        @@apply bg-gray-700 text-sage-400 px-2 py-1 rounded text-sm;
+    }
+
+    .blog-content pre {
+        @@apply bg-gray-800 border border-gray-700 rounded-lg p-6 overflow-x-auto my-8;
+    }
+
+        .blog-content pre code {
+            @@apply bg-transparent p-0;
         }
 
-        .blog-content h3 {
-            @@apply text-xl font-semibold text-foreground mt-8 mb-4;
-            scroll-margin-top: 100px;
-        }
+    .blog-content blockquote {
+        @@apply border-l-4 border-primary-500 pl-6 italic text-gray-300 my-8;
+    }
 
-        .blog-content p {
-            @@apply mb-6 text-gray-300 leading-relaxed;
-        }
+    .blog-content ul, .blog-content ol {
+        @@apply mb-6 pl-6;
+    }
 
-        .blog-content code {
-            @@apply bg-gray-700 text-sage-400 px-2 py-1 rounded text-sm;
-        }
+    .blog-content li {
+        @@apply mb-2 text-gray-300;
+    }
 
-        .blog-content pre {
-            @@apply bg-gray-800 border border-gray-700 rounded-lg p-6 overflow-x-auto my-8;
-        }
+    .blog-content a {
+        @@apply text-primary-400 hover:text-primary-300 underline transition-colors;
+    }
 
-            .blog-content pre code {
-                @@apply bg-transparent p-0;
-            }
-
-        .blog-content blockquote {
-            @@apply border-l-4 border-primary-500 pl-6 italic text-gray-300 my-8;
-        }
-
-        .blog-content ul, .blog-content ol {
-            @@apply mb-6 pl-6;
-        }
-
-        .blog-content li {
-            @@apply mb-2 text-gray-300;
-        }
-
-        .blog-content a {
-            @@apply text-primary-400 hover:text-primary-300 underline transition-colors;
-        }
+    img { 
+        width: 100%;
+    }
 
     /* Responsive adjustments for author/actions line */
     @@media (max-width: 768px) {
