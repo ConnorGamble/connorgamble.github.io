@@ -76,7 +76,7 @@
             }
             else
             {
-                posts = posts.OrderByDescending(c => c.FrontMatter.Published).ToList();
+                posts = posts.Where(x => x.Tags.First().Name == PostType).OrderByDescending(c => c.FrontMatter.Published).ToList();
             }
         }
 
