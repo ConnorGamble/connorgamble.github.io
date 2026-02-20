@@ -72,11 +72,11 @@
         {
             if (MaxPosts.HasValue && MaxPosts > 0)
             {
-                posts = posts.Where(x => x.Tags.First().Name == PostType).OrderByDescending(c => c.FrontMatter.Published).Take(MaxPosts.Value).ToList();
+                posts = posts.Where(x => x.Tags.Any(y => y.Name == PostType) && !x.Tags.Any(x => x.Name == "Template")).OrderByDescending(c => c.FrontMatter.Published).Take(MaxPosts.Value).ToList();
             }
             else
             {
-                posts = posts.Where(x => x.Tags.First().Name == PostType).OrderByDescending(c => c.FrontMatter.Published).ToList();
+                posts = posts.Where(x => x.Tags.Any(y => y.Name == PostType) && !x.Tags.Any(x => x.Name == "Template")).OrderByDescending(c => c.FrontMatter.Published).ToList();
             }
         }
 

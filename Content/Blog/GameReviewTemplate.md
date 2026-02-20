@@ -2,7 +2,7 @@
 title: Video game title
 lead: Description
 published: 2020-01-01
-tags: [ RemoveMe, GameReviews ]
+tags: [ Template, GameReviews ]
 ---
 
 # D - Describe

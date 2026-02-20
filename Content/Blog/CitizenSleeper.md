@@ -20,7 +20,7 @@ Bad roll? You end up hurting yourself.
 I went into it knowing that rolling dice was a core mechanic, similar to that of Disco Elysium which I've played some of but not finished.
 With that high expectation in mind, let's unpack a little bit about the experience.
 
-# Unpack
+# U - Unpack
 
 ## Story
 The story is decent, it delivers a coherent narrative without just exposition dumping and overwhelming the player. (or reader is probably more accurate) 

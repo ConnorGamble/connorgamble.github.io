@@ -33,11 +33,10 @@
             <span class="text-primary-300">@TagName</span>
         </p>
     </div>
-    <PostsList Posts="posts"/>
+    <PostsList PostType="@(TagName)" />
 </div>
 
 @code {
-
     [Parameter] public string? TagName { get; set; }
 
     List<Post<BlogFrontMatter>>? posts;
@@ -45,7 +44,7 @@
     protected override void OnInitialized()
     {
         if (string.IsNullOrWhiteSpace(TagName)) return;
-        posts = blazorStaticContentService.Posts.Where(x => x.FrontMatter.Tags.Contains(TagName)).ToList();
+        posts = blazorStaticContentService.Posts.Where(x => x.Tags.Any(y => y.EncodedName == TagName)).ToList();
     }
 
 }

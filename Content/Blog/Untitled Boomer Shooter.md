@@ -2,7 +2,7 @@
 title: Untitled Boomer Shooter
 lead: My first foray into Godot as a Unity refugee
 published: 2025-10-14
-tags: [ Projects, Godot, .Net , C#]
+tags: [ Projects, Godot, .Net , C#, GamePortfolio]
 ---
 
 ## Why Godot? 
