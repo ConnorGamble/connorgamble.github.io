@@ -50,10 +50,10 @@
 
             <!-- Tags -->
             <div class="flex flex-wrap gap-2">
-                @foreach (var tag in post.FrontMatter.Tags)
+                @foreach (var tag in post.Tags)
                 {
-                    <a class="skill-tag text-xs" href="@blazorStaticContentService.Options.Tags.TagsPageUrl/@tag">
-                        @tag
+                    <a class="skill-tag text-xs" href="@blazorStaticContentService.Options.Tags.TagsPageUrl/@tag.EncodedName">
+                        @tag.Name
                     </a>
                 }
             </div>
