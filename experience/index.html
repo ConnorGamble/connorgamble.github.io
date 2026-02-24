@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <link rel="stylesheet" href="app.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+    <title>Connor Gamble</title>
+    <meta name="description" content="C# Developer and avid gamer">
+    <meta name="keywords" content="Connor Gamble">
+    <meta name="author" content="Connor Gamble"></head>
+
+<body class="bg-gray-950 font-sans text-gray-200"><div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 "><div class="flex h-screen flex-col justify-between"><header class="flex items-center justify-between py-10"><div><a href><div class="flex items-center justify-between"><div class=" h-6 text-2xl font-semibold sm:block text-primary-500">Connor Gamble</div></div></a></div>
+    <div class="flex items-center space-x-4 leading-5 sm:space-x-6"><a href="" class="hidden font-medium text-gray-100 sm:block">Home
+                </a><a href="experience" class="hidden font-medium text-gray-100 sm:block bg-primary-950 px-2 py-1 rounded-xl" aria-current="page">Experience
+                </a><a href="projects" class="hidden font-medium text-gray-100 sm:block">Projects
+                </a><a href="personal" class="hidden font-medium text-gray-100 sm:block">Personal
+                </a><button id="toggle-button" aria-label="Toggle Menu" class="sm:hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-8 w-8 text-gray-100"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></button>
+        <div id="mobile-menu" class="fixed left-0 top-0 z-10 h-full w-full translate-x-full transform   duration-300 ease-in-out bg-gray-950 opacity-[0.98]"><div class="flex justify-end"><button id="close-mobile-menu-button" class="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-gray-100"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button></div>
+            <nav class="fixed mt-8 h-full"><div class="px-12 py-4"><a href="" class="text-2xl font-bold tracking-widest text-gray-100">Home
+                            </a></div><div class="px-12 py-4"><a href="experience" class="text-2xl font-bold tracking-widest text-gray-100 underline" aria-current="page">Experience
+                            </a></div><div class="px-12 py-4"><a href="projects" class="text-2xl font-bold tracking-widest text-gray-100">Projects
+                            </a></div><div class="px-12 py-4"><a href="personal" class="text-2xl font-bold tracking-widest text-gray-100">Personal
+                            </a></div></nav></div></div></header>
+<script>
+    //👎 but what can I do? It's a static html. I can't use C# here.
+     const toggleMobileMenu = () => document.querySelector('#mobile-menu').classList.toggle('translate-x-full');
+
+     document.querySelector('#toggle-button').addEventListener('click', toggleMobileMenu);
+     document.querySelector('#close-mobile-menu-button').addEventListener('click', toggleMobileMenu);
+</script>
+
+        <main class="mb-auto">
+
+
+<div class="flex flex-col-reverse items-start space-y-4 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0"><div class="prose max-w-none pb-4 pt-4 xl:col-span-3"><div class="mb-4"><h3 class="text-lg font-bold text-foreground mb-3">Current Role</h3>
+            <div class="space-y-3"><div class="border-l-4 border-primary-500 pl-4"><h4 class="font-semibold text-foreground">Software Engineer</h4>
+                    <p class="text-gray-300">PebblePad</p>
+                    <p class="text-sm text-gray-400">April 2021 � Present</p>
+                    <ul><li><p class="text-gray-300 mt-1 text-sm">Developing internal tools to help generate bulk test data to test services on production sized data sets in order to monitor performance impacts </p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">Assisting in creating of new development processes in order to ensure quality is delivered.</p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">Working within Cloud tech stacks to deliver a storage limitation service with the goal of helping maintain a healthy database</p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">Working to move the system from local caches to network caches to support horizontal scaling architecture</p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">Various analyser projects to help ensure code quality standards are adhered to</p></li></ul></div></div>
+
+            <h3 class="text-lg font-bold text-foreground mb-3">Previous Roles</h3>
+            <div class="space-y-3"><div class="border-l-4 border-primary-500 pl-4"><h4 class="font-semibold text-foreground">Backend software engineer</h4>
+                    <p class="text-gray-300">Codeweavers</p>
+                    <p class="text-sm text-gray-400">August 2019 - April 2021</p>
+                    <ul><li><p class="text-gray-300 mt-1 text-sm">Working closely with product owners, account managers and end users to translate business problems into platform solutions</p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">Working solo and within a team to implement and deliver new features and maintain legacy code</p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">Assisting customers to help resolve any issues they may be encountering</p></li></ul></div></div>
+
+            <div class="space-y-3"><div class="border-l-4 border-primary-500 pl-4"><h4 class="font-semibold text-foreground">Developer</h4>
+                    <p class="text-gray-300">Fasetto</p>
+                    <p class="text-sm text-gray-400">August 2017 - May 2019</p>
+                    <ul><li><p class="text-gray-300 mt-1 text-sm">Creating and maintaining Android and iOS applications using Xamarin, C#</p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">Created various web pages using C# (using Bridge.net), Scss and HTML</p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">Development and testing of the product from initial prototyping to final polishing and bug fixing </p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">Mentoring and aiding junior members of the team</p></li></ul></div></div></div>
+
+
+        
+        <div class="mb-4"><h3 class="text-lg font-bold text-foreground mb-3">Education</h3>
+            <div class="space-y-3"><div class="border-l-4 border-primary-500 pl-4"><h4 class="font-semibold text-foreground">Anglia Ruskin University</h4>
+                    <p class="text-gray-300">Computer Gaming Technology BSc (Hons)</p>
+                    <p class="text-sm text-gray-400">1st Class Honours, graduating 2017</p>
+                    <ul><li><p class="text-gray-300 mt-1 text-sm">Technical foundation in programming</p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">3 years hands on experience with Unity</p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">Foundational 3D modelling experience using 3DS Max</p></li>
+                        <li><p class="text-gray-300 mt-1 text-sm">Production experience meant to mimic the entire lifecycle of a game, from pitching to polish</p></li></ul>
+                    <p class="text-sm text-gray-400">You can see a list of prototypes and work <a class="text-primary-500 hover:text-primary-400" href="gameportfolio">here</a></p></div></div></div></div></div></main>
+
+        <footer><div class="mt-16 flex flex-col items-center"><div class="mb-3 flex space-x-4"><img src="/Tickle.png"></div>
+                <div class="mb-2 flex space-x-2 text-sm text-gray-400"><a>Connor Gamble</a>
+                    <div>•</div>
+                    <div>© 2026</div></div></div></footer></div></div>
+        </body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/csharp.min.js"></script>
+<script>
+    // Initialize highlight.js when DOM is ready and after potential dynamic content loads
+    document.addEventListener('DOMContentLoaded', function() {
+        hljs.highlightAll();
+    });
+
+    // For static generated pages, also run immediately
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+            hljs.highlightAll();
+        });
+    } else {
+        hljs.highlightAll();
+    }
+
+    // Re-highlight when navigating in Blazor (for SPA behavior)
+    window.addEventListener('popstate', function() {
+        setTimeout(function() {
+            hljs.highlightAll();
+        }, 100);
+    });
+</script></html>
