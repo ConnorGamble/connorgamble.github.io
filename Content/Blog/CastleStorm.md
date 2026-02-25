@@ -27,5 +27,3 @@ This mechanic was partly for balance, but it was also added to work around a bug
 ![CastleStormScreenshot](media/GamePortfolio/CastleStorm/Revolt.png)
 
 This was the project which got us (the team who worked on the game as a group project) into Brains Eden 2016, the 48 hour game jam where our theme was "Parity".
-
-https://www.youtube.com/watch?v=8cNG5ZelTf0 Brains Eden 2016

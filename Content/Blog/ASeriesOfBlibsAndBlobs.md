@@ -23,4 +23,5 @@ Visually, I experimented with shaders and aimed for an [Antichamber](https://sto
 
 The shaders aren't very accessibility-friendly, but they served the prototype's needs.
 
-[Here is a rough gameplay walkthrough](https://www.youtube.com/watch?v=6C9BQ43367Y) of the prototype where you can see some of the levels designed to test the concept.
+Here is a rough gameplay walkthrough of the prototype where you can see some of the levels designed to test the concept.
+![Gameplay Walkthrough](https://www.youtube.com/watch?v=6C9BQ43367Y)

@@ -41,9 +41,7 @@ Making someone move in such a way is easy enough to do hook up the input, move i
 But it lacks something. It feels static, like not enough feedback is given for the direction you're moving in. 
 This is where I first started playing around with camera tilting. I started using tweening to animate a smooth transition from a "tilted" state to a non tilted state and it'll apply these when the character is moving. 
 
-```
-TODO: Side by side comparison
-```
+![Camera Comparison](https://youtu.be/8LwClBhI0RU)
 
 Straight away you can feel the difference, it's only a subtle tilt and this natually introduces it's own challenges since when I was developing this since initially I had a hitscan line beaming out of the characters face to be the shot so that had to change since it tilted with the camera. Not ideal. 
 
