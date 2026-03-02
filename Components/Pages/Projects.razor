@@ -5,6 +5,13 @@
 @using BlazorStatic.Services
 @inject BlazorStaticContentService<BlogFrontMatter> blazorStaticContentService
 
+<HeadContent>
+    <title>Connor Gamble</title>
+    <meta name="description" content="C# Developer and avid gamer" />
+    <meta name="keywords" content="Connor Gamble" />
+    <meta name="author" content="Connor Gamble" />
+</HeadContent>
+
 
 @* No filename -> show latest posts *@
 @if (string.IsNullOrWhiteSpace(FileName))
