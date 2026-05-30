@@ -1,10 +1,10 @@
-﻿---
+---
 title: Video game title
 lead: Description
 published: 2020-01-01
 tags: [ Template, GameReviews ]
 ---
-
+![Video game Header](connorgamble.github.com)
 # D - Describe
 ```
 // What it is (genre, core loop, style)
