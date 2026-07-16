@@ -40,16 +40,16 @@ It also added a couple of different pages.
 
 ## Character page 
 ![DnD Dice roller character sheet](media/DnDDiceRoller/CharacterSheet.png)
-Not really too much to say on this, it's basically just a load of textboxes, it's only purpose is just to keep track of stuff which you would otherwise keep track of on your character sheet. 
+Not really too much to say on this, it's basically just a load of textboxes, its only purpose is just to keep track of stuff which you would otherwise keep track of on your character sheet. 
 The final page however...
 
 
 ## Discord integration
-Discord integration, as someone fresh out of university was absolutely nuts to me. But I managed to make it so that pressing the button on a roll would also tell a bot to write the result in a Discord channel of the players choosing. 
+Discord integration, as someone fresh out of university was absolutely nuts to me. But I managed to make it so that pressing the button on a roll would also tell a bot to write the result in a Discord channel of players choosing. 
 It also had the option to make a "DM only roll" which would instead send your chosen DM a direct message, for those rolls you try and keep a little more conspicuous. (which for this group, was pickpocketing each other)
 ![DnD Dice roller settings](media/DnDDiceRoller/SetupPage.png)
 
-The Bot Setup and How To just redirected to web pages on my old (and now long gone) website. Way back machine has a version of it, but it's not exactly viewer friendly. (not at all, frankly)
+The Bot Setup and How To just redirected to web pages on my old (and now long gone) website. Wayback machine has a version of it, but it's not exactly viewer friendly. (not at all, frankly)
 Suppose I could pull out the html... But it'd likely be out of date anyway!
 
 
@@ -65,4 +65,4 @@ I wanted to:
 - Fleshed out setup instructions, walking you through setup in-app instead of redirecting to a website
 
 ## Discontinuation
-Through finishing the campaign and moving onto other passtimes, the project was eventually just never picked up again. I still have all the sourcecode, though!
+Through finishing the campaign and moving onto other pastimes, the project was eventually just never picked up again. I still have all the sourcecode, though!

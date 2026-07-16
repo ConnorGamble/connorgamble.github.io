@@ -12,7 +12,7 @@ It was very different to anything that I had done before.
 
 After rewatching the 6 Star Wars films which were out at the time (for research purposes, of course!) I decided to model 3 things: 
 - The TIE Fighter (A classic Star Wars ship, needs no introduction whatsoever)
-- A N1 Starfighter (The ship that Luke Skywalker flew in Episode 4)
+- A N1 Starfighter (The ship that Anakin Skywalker used to nuke a the Droid Control ship)
 - A Snowspeeder (The ship used in the Battle of Hoth in Episode 5)
 
 I spent weeks modelling these ships, learning the software as I went along. It was a steep learning curve but I was (and still am) pretty proud of how it turned out in the end! 
@@ -31,7 +31,7 @@ Given the time it had been since I last did any modelling, I was looking straigh
 The Blender Guru's Donut tutorial. Here's mine!
 ![Blender Doughnut](media/3DModelling/Doughnut.png)
 
-This really helped me get around Blender learnig more of the keybinds etc to help me get started. 
+This really helped me get around Blender learning more of the keybinds etc to help me get started. 
 From here I wanted to start having an idea and then just going at it myself instead of following tutorials. 
 
 So I decided to try and model a pirate coin. A simple concept which can be as in-depth as I choose. and I ended up with this: 
@@ -40,13 +40,13 @@ So I decided to try and model a pirate coin. A simple concept which can be as in
 This is where the concept started to take shape so naturally it evolved into a trove of treasure instead of just a single thing: 
 ![Treasure](media/3DModelling/Treasure.png)
 
-And then a whole taking, sitting on a ship etc. Where I started to experiment with lighting and glowing objects which could be like mysterious artifacts.
+And then a big ol' pile, sitting on a ship etc. Where I started to experiment with lighting and glowing objects which could be like mysterious artifacts.
 ![Shelf](media/3DModelling/Shelf.png)
 
 I kept building it up until I eventually decided that I wanted to switch it up. I think around that time Cyberpunk had been out for a little while and I thought about designing a Cyberpunk style, isometric room. 
 ![Cyberpunk Room](media/3DModelling/CyberpunkRoom.png)
 
-The eagle eyed proably noticed the trinkets on the shelves are other things I'd worked on in Blender, I thought it was incredible to just import them and have them look so naturally fitting. 
+The eagle eyed have probably noticed the trinkets on the shelves are other things I'd worked on in Blender, I thought it was incredible to just import them and have them look so naturally fitting. 
 I also did very much enjoy Hollow Knight, so much so I modelled them!
 
 It's incredible seeing how I just had an idea and completely _ran_ with it.

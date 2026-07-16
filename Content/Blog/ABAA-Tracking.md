@@ -9,7 +9,7 @@ tags: [ Projects, Blazor, .Net ,C#]
 This page itself is quite agility racing heavy too, I didn't know any of this before starting so I'd skip to the screenshots if you're just interested in the actual website.
 
 # About the website
-The website was made bespoke for the club itself, they do things different to other clubs and their website needed to reflect that.
+The website was made bespoke for the club itself, since this club already has a defined format they had been using previously and their website needed to reflect that.
 Additionally, the project is ever evolving, with usually there being a couple of updates/tweaks or quality of life improvements since they host their shows in the winter.
 
 ## What is dog agility?
@@ -29,7 +29,7 @@ The quick rundown is that it's got 5 main features:
 
 ## What about the more backend stuff which users don't see?
 The main two things which this website does from the backend is it has the ability to import a CSV file which contains all the information about the dogs. I wouldn't want to type in 100 or so entrants manually anyway, but it does have the ability to add new dogs at will!
-Additionally, on the other end of the "lifecycle", it also allows for all of the resuls to be "exported" into a CSV format so the club can share them on their Facebook page.
+Additionally, on the other end of the "lifecycle", it also allows for all of the results to be "exported" into a CSV format so the club can share them on their Facebook page.
 Along with some authentication so that only event staff can action things on the website.
 
 ## Seems cool, can you break down what each page does? 
