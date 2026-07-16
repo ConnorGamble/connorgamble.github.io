@@ -65,14 +65,14 @@ Unfortunately, Unity did an oopsy and tried to impose the infamous Runtime Fee.<
 So I did some research and found out about Godot which, due to the Unity controversy, was getting a lot of backing and donations as an alternative so I decided to give it a try.</p>
 <h2 id="so-what-have-you-done-in-it">So what have you done in it?</h2>
 <p>I've done a couple of small projects, most done not with the intention of actually shipping something but just adjusting to a new engine, new workflow etc.
-This was mostly in the 2D space since I thought it'd be more straight. Last thing you need when learning a new engine is to bite off more than you can chew.</p>
+This was mostly in the 2D space since I thought it'd be more straightforward. Last thing you need when learning a new engine is to bite off more than you can chew.</p>
 <p>After many hours messing about and learning the ropes I decided it's time to build something which I would enjoy playing.</p>
 <p>Enter; The boomer shooter.</p>
 <h2 id="boom-boom-boom">Boom, boom, boom</h2>
-<p>I love first person shooters. Always have, I feeling you get when you do some sort of movement or flick and you're staring at your hand like &quot;did <em>I</em> do that?!?&quot;</p>
+<p>I love first person shooters. Always have, I love the feeling you get when you do some sort of movement or flick and you're staring at your hand like &quot;did <em>I</em> do that?!?&quot;</p>
 <p>I look at things like Doom, Quake, ULTRAKILL and they FEEL fun to play. The core desire behind making any game I feel should be how fun it is. It should be enjoyable.</p>
 <p>So I'm taking that concept and I'm rolling with it completely, letting it drive every decision that I make when it comes to determining any features/mechanics.
-Before and after I implement something I'll be asking? &quot;do I find this fun?&quot; or &quot;would this kill my enjoyment?&quot;</p>
+Before and after I implement something I'll be asking: &quot;do I find this fun?&quot; or &quot;would this kill my enjoyment?&quot;</p>
 <h2 id="sch-moooovement">Sch-moooovement</h2>
 <p>As mentioned, movement is a big part of a boomer shooter. You gotta go fast and you gotta feel fast.
 Naturally, it's the first thing I started with when making this.</p>
@@ -81,10 +81,23 @@ Making someone move in such a way is easy enough to do hook up the input, move i
 <p>But it lacks something. It feels static, like not enough feedback is given for the direction you're moving in.
 This is where I first started playing around with camera tilting. I started using tweening to animate a smooth transition from a &quot;tilted&quot; state to a non tilted state and it'll apply these when the character is moving.</p>
 <p><iframe src="https://www.youtube.com/embed/8LwClBhI0RU" class="youtube" width="500" height="281" frameborder="0" allowfullscreen=""></iframe></p>
-<p>Straight away you can feel the difference, it's only a subtle tilt and this natually introduces it's own challenges since when I was developing this since initially I had a hitscan line beaming out of the characters face to be the shot so that had to change since it tilted with the camera. Not ideal.</p>
+<p>Straight away you can feel the difference, it's only a subtle tilt and this naturally introduces its own challenges since when I was developing this since initially I had a hitscan line beaming out of the characters face to be the shot so that had to change since it tilted with the camera. Not ideal.</p>
 <p>Only thing left is getting a decent jump. There is a jump mechanic which I have implemented but it's quite small at the moment. I'm imagining it'll just need to go a touch higher but want to spend time making sure it feels right rather than just going up.</p>
-<h2 id="guns.lots-of-guns">Guns. Lots of guns.</h2>
-<p>Can't have a shooter without a weapon! And usually, Boomer shooters have an array of weapons to choose from so it was important that you've got some snappy switching.</p>
+<h2 id="barrel-bonking">Barrel bonking</h2>
+<p>Now that the movement is in a pretty good place I decided to start just making a test level so that I could use it as my main &quot;playground&quot; for iterating on mechanics. After mucking about with the geometry more I realised that it was all feeling rather static. Which, of course it would, everything is completely static.</p>
+<p>So I decided to start mucking about with <code>RigidBody3D</code>, Godot's physics system. First thing I decided to try it on was a barrel. Nothing fancy, just the classic, waist high object which would go flying when it was hit (or be shot to explode).</p>
+<p>Next was the likes of lanterns. Might seem like a weird thing to go to next but it makes sense in the context of the theme. This was an interesting challenge because it had to be connected to something and still allow for physics when colliding with it.</p>
+<p>I decided to use chain links where there is a single, invisible object wherever I place the game object overall. This allows me in editor to place the &quot;connection&quot; point to the static object. At runtime, the script for the object will create the actual chain mechanism iteratively, so I'm able to decide how many links there are, how far apart they should be etc.</p>
+<p>It took probably much longer than it should have but I was really happy with the outcome of it overall.</p>
+<p>Can have short bois:
+<img src="Content/Blog/media/GamePortfolio/BoomerShooter/ShortBoi.png" alt="Short boi" /></p>
+<p>Can have long bois:
+<img src="Content/Blog/media/GamePortfolio/BoomerShooter/LongBoi.png" alt="Long boi" /></p>
+<p>Or <em>really really</em> long bois:
+<img src="Content/Blog/media/GamePortfolio/BoomerShooter/ReallyLongBoi.png" alt="Really long boi" /></p>
+<p>As you'd imagine, bumping into them will also cause them to go flying and return to their original position. (again, fitting the ever elusive theme 😉)</p>
+<p>Check them out in engine here:
+<iframe src="https://www.youtube.com/embed/azSQxbfNi7E" class="youtube" width="500" height="281" frameborder="0" allowfullscreen=""></iframe>!</p>
 </div></div></main></div>
 
     
