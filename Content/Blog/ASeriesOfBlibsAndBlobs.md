@@ -1,7 +1,7 @@
 ﻿---
 title: A Series of Blibs and Blobs
 lead: 3 blobs, merging and splitting to solve a puzzle
-published: 2020-01-01
+published: 2017-01-28
 tags: [ GamePortfolio, Unity, C#, .Net ]
 ---
 ![ASeriesOfBlibsAndBlobsHeader](media/GamePortfolio/ASeriesOfBlibsAndBlobs/Menu.png)

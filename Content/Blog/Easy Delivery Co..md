@@ -7,6 +7,7 @@ tags:
 ---
 ![Easy Delivery Co. Header](https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3293010/2d0ded07083fd997234193517d5a6c65a1cf7920/header.jpg?t=1774775396)
 # D - Describe
+***
 
 Easy Deliver Co. is a cosy delivery game, dressed up in PS1 style graphics and a lot of charm. 
 The core gameplay loop sees you play as a cat, the new delivery driver in town. (alright he's got no thumbs to drive but you've probably palmed the steering wheel before, don't think too much about it)
@@ -14,6 +15,8 @@ You pickup a parcel at point A, load it up in your trusty truck and deliver it t
 
 I came into it like the storefront pitches it, just a cosy game just about driving around delivering packages, the sort of experience where you can just switch your brain off for a few hours and follow the road. Turns out all that was in this package was horror...
 # U - Unpack
+***
+
 ## Moment to moment gameplay
 It's worth mentioning upfront that there is no combat in this game. The main elements of challenge comes from the weather and road conditions. (Or, offroad conditions, in the case of some parts of the game). So naturally, the main gameplay loop consists of driving.
 
@@ -76,6 +79,8 @@ And it fits perfectly, given it's main story hook!
 ## Technical Performance
 
 # C - Critique
+***
+
 ## Strengths
 - Fantastic visual style
 - Satisfying driving physics
@@ -88,6 +93,8 @@ And it fits perfectly, given it's main story hook!
 - That one damn snowcat on top of the Easton building
 
 # K - Keepers
+***
+
 So I've mentioned it a couple a times, the big twist. So **spoiler alert**, I'd recommend that if so far it sounds like something which is up your alley then go and experience it now before spoiling yourself.
 
 <details>

@@ -6,12 +6,16 @@ tags: [ Template, GameReviews ]
 ---
 ![Video game Header](connorgamble.github.com)
 # D - Describe
+***
+
 ```
 // What it is (genre, core loop, style)
 // Expectations
 ```
 
 # U - Unpack
+***
+
 ```
 // Major systems and how they interact
 ```
@@ -35,13 +39,18 @@ tags: [ Template, GameReviews ]
 ## Technical Performance
 
 # C - Critique
+***
+
 ## Strengths
+
 - 
 
 ## Weaknesses
 -
 
 # K - Keepers
+***
+
 ```
 // Moments which stay in the mind
 ```

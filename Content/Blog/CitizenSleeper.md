@@ -7,6 +7,8 @@ tags: [ GameReviews ]
 ![Citizen Sleeper Header](https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1578650/03a8446c1df268f697eb2e00a3cfd98f5d07eb31/capsule_616x353.jpg)
 
 # D - Describe
+***
+
 ## What is it?
 [Citizen Sleeper](https://store.steampowered.com/app/1578650/Citizen_Sleeper/) is a Cyberpunk RPG set on a ruined space station. 
 You play as a Sleeper, which is a human consciousness in a robot body. You're just trying to make your way in the world whilst being hunted by the corporation who wants that robot body back.
@@ -21,6 +23,7 @@ I went into it knowing that rolling dice was a core mechanic, similar to that of
 With that high expectation in mind, let's unpack a little bit about the experience.
 
 # U - Unpack
+***
 
 ## Story
 The story is decent, it delivers a coherent narrative without just exposition dumping and overwhelming the player. (or reader is probably more accurate) 
@@ -79,6 +82,8 @@ The UI is clean, sharp and very easy to understand. It all fits together really 
 Citizen Sleeper is a really simple game, it's not doing anything particularly complex but it's performance is flawless and I encountered no technical issues with it whatsoever which is very refreshing.
 
 # C - Critique
+***
+
 ## Strengths
 - **THE MUSIC**
 - The character sprites and UI look incredible
@@ -91,6 +96,8 @@ Citizen Sleeper is a really simple game, it's not doing anything particularly co
 - Just let me scroll once I've unlocked the docking man, it's so small but you cross over it enough!
 
 # K - Keepers
+***
+
 - The dice systems work well, simple enough to easily grasp but not impactful enough to feel like if you don't roll perfectly then you'll screw up the entire playthrough. 
 - Two songs in particular, Coalesce and Possible Futures are incredible, such wonderful composition gives a really strange mix of emotions. 
 
