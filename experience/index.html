@@ -1,113 +1,66 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0d0c">
+    <meta name="color-scheme" content="dark">
     <base href="/">
+    <script>document.documentElement.classList.add('js');</script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    
-    <link rel="stylesheet" href="app.min.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+    <link rel="stylesheet" href="css/site.css">
     <title>Connor Gamble</title>
-    <meta name="description" content="C# Developer and avid gamer">
-    <meta name="keywords" content="Connor Gamble">
-    <meta name="author" content="Connor Gamble"></head>
+    <meta name="description" content="C# Developer and avid gamer" />
+    <meta name="author" content="Connor Gamble" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Connor Gamble" />
+    <meta property="og:title" content="Connor Gamble" />
+    <meta property="og:description" content="C# Developer and avid gamer" />
+    </head>
 
-<body class="bg-gray-950 font-sans text-gray-200"><div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 "><div class="flex h-screen flex-col justify-between"><header class="flex items-center justify-between py-10"><div><a href><div class="flex items-center justify-between"><div class=" h-6 text-2xl font-semibold sm:block text-primary-500">Connor Gamble</div></div></a></div>
-    <div class="flex items-center space-x-4 leading-5 sm:space-x-6"><a href="" class="hidden font-medium text-gray-100 sm:block">Home
-                </a><a href="experience" class="hidden font-medium text-gray-100 sm:block bg-primary-950 px-2 py-1 rounded-xl" aria-current="page">Experience
-                </a><a href="projects" class="hidden font-medium text-gray-100 sm:block">Projects
-                </a><a href="personal" class="hidden font-medium text-gray-100 sm:block">Personal
-                </a><button id="toggle-button" aria-label="Toggle Menu" class="sm:hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-8 w-8 text-gray-100"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></button>
-        <div id="mobile-menu" class="fixed left-0 top-0 z-10 h-full w-full translate-x-full transform   duration-300 ease-in-out bg-gray-950 opacity-[0.98]"><div class="flex justify-end"><button id="close-mobile-menu-button" class="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-gray-100"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button></div>
-            <nav class="fixed mt-8 h-full"><div class="px-12 py-4"><a href="" class="text-2xl font-bold tracking-widest text-gray-100">Home
-                            </a></div><div class="px-12 py-4"><a href="experience" class="text-2xl font-bold tracking-widest text-gray-100 underline" aria-current="page">Experience
-                            </a></div><div class="px-12 py-4"><a href="projects" class="text-2xl font-bold tracking-widest text-gray-100">Projects
-                            </a></div><div class="px-12 py-4"><a href="personal" class="text-2xl font-bold tracking-widest text-gray-100">Personal
-                            </a></div></nav></div></div></header>
-<script>
-    //👎 but what can I do? It's a static html. I can't use C# here.
-     const toggleMobileMenu = () => document.querySelector('#mobile-menu').classList.toggle('translate-x-full');
+<body><a class="skip-link" href="#main">Skip to content</a>
+<div class="backdrop" aria-hidden="true"></div>
 
-     document.querySelector('#toggle-button').addEventListener('click', toggleMobileMenu);
-     document.querySelector('#close-mobile-menu-button').addEventListener('click', toggleMobileMenu);
-</script>
+<header class="site-header" data-menu><div class="container site-header__inner"><a class="brand" href><span class="brand__mark" aria-hidden="true"></span>
+            Connor Gamble</a>
 
-        <main class="mb-auto">
+        <nav class="nav" aria-label="Main"><a href="" class="nav__link">Home</a><a href="experience" class="nav__link is-active" aria-current="page">Experience</a><a href="projects" class="nav__link">Projects</a><a href="personal" class="nav__link">Personal</a></nav>
 
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle><svg class="icon nav-toggle__open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+            <svg class="icon nav-toggle__close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
 
-<div class="flex flex-col-reverse items-start space-y-4 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0"><div class="prose max-w-none pb-4 pt-4 xl:col-span-3"><div class="mb-4"><h3 class="text-lg font-bold text-foreground mb-3">Current Role</h3>
-            <div class="space-y-3"><div class="border-l-4 border-primary-500 pl-4"><h4 class="font-semibold text-foreground">Software Engineer</h4>
-                    <p class="text-gray-300">PebblePad</p>
-                    <p class="text-sm text-gray-400">April 2021 - Present</p>
-                    <ul><li><p class="text-gray-300 mt-1 text-sm">Introduced a Personal Data tag across every company data structure, backed by analysers that enforce it on all Mongo and Postgres properties, so personal data is traceable and ready for anonymisation.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Delivered a compliance tool that finds and deletes records that should no longer be held, and a recovery tool that restored records from backup after a legacy purging system removed them.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Built tooling for production-scale testing, including a bulk data generator producing multi-GB datasets (used to test the compliance tool's performance) and a schema drift tool that generates scripts to reconcile two schemas.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Migrated caching from local to network caches (Valkey) to support horizontal scaling, moved the platform to LTI 1.3, and cut tech debt by decommissioning legacy applications.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Built and tested a bronze data pipeline in Python, and delivered a user engagement feature that bulk fetches data and presents it with saving and filtering.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Ran team retros with managers, tracking delivery metrics such as time blocked and points completed, and acting on them to keep delivery smooth and the team happy.</p></li></ul></div></div>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile"><a style="--i: 0" href="" class="mobile-menu__link">Home</a><a style="--i: 1" href="experience" class="mobile-menu__link is-active" aria-current="page">Experience</a><a style="--i: 2" href="projects" class="mobile-menu__link">Projects</a><a style="--i: 3" href="personal" class="mobile-menu__link">Personal</a></nav></header>
 
-            <h3 class="text-lg font-bold text-foreground mb-3">Previous Roles</h3>
-            <div class="space-y-3"><div class="border-l-4 border-primary-500 pl-4"><h4 class="font-semibold text-foreground">Backend Software Engineer</h4>
-                    <p class="text-gray-300">Codeweavers</p>
-                    <p class="text-sm text-gray-400">August 2019 - April 2021</p>
-                    <ul><li><p class="text-gray-300 mt-1 text-sm">Worked in the proposals team, integrating new lenders from scratch and maintaining integrations for existing clients.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Migrated multiple clients from a legacy proposal polling system to a newly reworked one.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Built and maintained backend services, individually and within a team, delivering new features while maintaining legacy code.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Diagnosed and fixed customer-reported issues directly, translating business problems into platform solutions for product owners, account managers and end users.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Buddied and helped train apprentices joining the company, supporting their transition into the world of work.</p></li></ul></div></div>
+<main id="main" class="container page">
 
-            <div class="space-y-3"><div class="border-l-4 border-primary-500 pl-4"><h4 class="font-semibold text-foreground">Developer</h4>
-                    <p class="text-gray-300">Fasetto</p>
-                    <p class="text-sm text-gray-400">August 2017 - May 2019</p>
-                    <ul><li><p class="text-gray-300 mt-1 text-sm">Helped build the Fasetto app, a cross-platform Android and iOS client built with Xamarin that let users select a box on the network and connect straight into its live slideshow.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Worked with a team to create the slideshow software itself, allowing people to connect to the network and view slides live.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Delivered feature work across mobile and web, including web pages built with Bridge.NET, SCSS and HTML.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Supported the product lifecycle from initial prototyping through to final polish and ongoing support.</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Mentored junior team members and supported their development.</p></li></ul></div></div></div>
+<header class="page-header"><h1 class="page-header__title">Experience</h1></header>
 
+<section class="timeline-group"><h2 class="label">Current Role</h2>
+        <ol class="timeline"><li class="timeline__item reveal is-current"><div class="timeline__head"><h3 class="timeline__title">Software Engineer</h3>
+                        <span class="timeline__period">April 2021 - Present</span></div>
+                    <p class="timeline__org">PebblePad</p><ul class="timeline__highlights"><li>Introduced a Personal Data tag across every company data structure, backed by analysers that enforce it on all Mongo and Postgres properties, so personal data is traceable and ready for anonymisation.</li><li>Delivered a compliance tool that finds and deletes records that should no longer be held, and a recovery tool that restored records from backup after a legacy purging system removed them.</li><li>Built tooling for production-scale testing, including a bulk data generator producing multi-GB datasets (used to test the compliance tool&#x27;s performance) and a schema drift tool that generates scripts to reconcile two schemas.</li><li>Migrated caching from local to network caches (Valkey) to support horizontal scaling, moved the platform to LTI 1.3, and cut tech debt by decommissioning legacy applications.</li><li>Built and tested a bronze data pipeline in Python, and delivered a user engagement feature that bulk fetches data and presents it with saving and filtering.</li><li>Ran team retros with managers, tracking delivery metrics such as time blocked and points completed, and acting on them to keep delivery smooth and the team happy.</li></ul></li></ol></section>
+<section class="timeline-group"><h2 class="label">Previous Roles</h2>
+        <ol class="timeline"><li class="timeline__item reveal "><div class="timeline__head"><h3 class="timeline__title">Backend Software Engineer</h3>
+                        <span class="timeline__period">August 2019 - April 2021</span></div>
+                    <p class="timeline__org">Codeweavers</p><ul class="timeline__highlights"><li>Worked in the proposals team, integrating new lenders from scratch and maintaining integrations for existing clients.</li><li>Migrated multiple clients from a legacy proposal polling system to a newly reworked one.</li><li>Built and maintained backend services, individually and within a team, delivering new features while maintaining legacy code.</li><li>Diagnosed and fixed customer-reported issues directly, translating business problems into platform solutions for product owners, account managers and end users.</li><li>Buddied and helped train apprentices joining the company, supporting their transition into the world of work.</li></ul></li><li class="timeline__item reveal "><div class="timeline__head"><h3 class="timeline__title">Developer</h3>
+                        <span class="timeline__period">August 2017 - May 2019</span></div>
+                    <p class="timeline__org">Fasetto</p><ul class="timeline__highlights"><li>Helped build the Fasetto app, a cross-platform Android and iOS client built with Xamarin that let users select a box on the network and connect straight into its live slideshow.</li><li>Worked with a team to create the slideshow software itself, allowing people to connect to the network and view slides live.</li><li>Delivered feature work across mobile and web, including web pages built with Bridge.NET, SCSS and HTML.</li><li>Supported the product lifecycle from initial prototyping through to final polish and ongoing support.</li><li>Mentored junior team members and supported their development.</li></ul></li></ol></section>
+<section class="timeline-group"><h2 class="label">Education</h2>
+        <ol class="timeline"><li class="timeline__item reveal "><div class="timeline__head"><h3 class="timeline__title">Anglia Ruskin University</h3>
+                        <span class="timeline__period">1st Class Honours, graduating 2017</span></div>
+                    <p class="timeline__org">Computer Gaming Technology BSc (Hons)</p><ul class="timeline__highlights"><li>Technical foundation in programming</li><li>3 years hands on experience with Unity</li><li>Foundational 3D modelling experience using 3DS Max</li><li>Production experience meant to mimic the entire lifecycle of a game, from pitching to polish</li></ul><div class="prose timeline__note"><p>You can see a list of prototypes and work <a href="gameportfolio">here</a>.</p>
+</div></li></ol></section></main>
 
+<footer class="site-footer"><div class="container site-footer__inner"><img class="site-footer__mascot" src="Tickle.png" alt width="40" height="40">
+        <p class="site-footer__text">Connor G <span aria-hidden="true">&middot;</span> &copy; 2026</p><a class="icon-link" href="https://github.com/ConnorGamble" aria-label="GitHub"><svg class="icon " viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a></div></footer>
         
-        <div class="mb-4"><h3 class="text-lg font-bold text-foreground mb-3">Education</h3>
-            <div class="space-y-3"><div class="border-l-4 border-primary-500 pl-4"><h4 class="font-semibold text-foreground">Anglia Ruskin University</h4>
-                    <p class="text-gray-300">Computer Gaming Technology BSc (Hons)</p>
-                    <p class="text-sm text-gray-400">1st Class Honours, graduating 2017</p>
-                    <ul><li><p class="text-gray-300 mt-1 text-sm">Technical foundation in programming</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">3 years hands on experience with Unity</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Foundational 3D modelling experience using 3DS Max</p></li>
-                        <li><p class="text-gray-300 mt-1 text-sm">Production experience meant to mimic the entire lifecycle of a game, from pitching to polish</p></li></ul>
-                    <p class="text-sm text-gray-400">You can see a list of prototypes and work <a class="text-primary-500 hover:text-primary-400" href="gameportfolio">here</a></p></div></div></div></div></div></main>
 
-        <footer><div class="mt-16 flex flex-col items-center"><div class="mb-3 flex space-x-4"><img src="/Tickle.png"></div>
-                <div class="mb-2 flex space-x-2 text-sm text-gray-400"><a>Connor G</a>
-                    <div>•</div>
-                    <div>© 2026</div></div></div></footer></div></div>
-        </body>
-
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/csharp.min.js"></script>
-<script>
-    // Initialize highlight.js when DOM is ready and after potential dynamic content loads
-    document.addEventListener('DOMContentLoaded', function() {
-        hljs.highlightAll();
-    });
-
-    // For static generated pages, also run immediately
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() {
-            hljs.highlightAll();
-        });
-    } else {
-        hljs.highlightAll();
-    }
-
-    // Re-highlight when navigating in Blazor (for SPA behavior)
-    window.addEventListener('popstate', function() {
-        setTimeout(function() {
-            hljs.highlightAll();
-        }, 100);
-    });
-</script></html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/csharp.min.js"></script>
+    <script src="js/site.js"></script></body></html>

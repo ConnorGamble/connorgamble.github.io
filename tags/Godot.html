@@ -1,77 +1,58 @@
 <!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0d0c">
+    <meta name="color-scheme" content="dark">
     <base href="/">
+    <script>document.documentElement.classList.add('js');</script>
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    
-    <link rel="stylesheet" href="app.min.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/tokyo-night-dark.min.css">
+    <link rel="stylesheet" href="css/site.css">
+    <title>Connor Gamble</title>
+    <meta name="description" content="C# Developer and avid gamer" />
+    <meta name="author" content="Connor Gamble" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Connor Gamble" />
+    <meta property="og:title" content="Connor Gamble" />
+    <meta property="og:description" content="C# Developer and avid gamer" />
     </head>
 
-<body class="bg-gray-950 font-sans text-gray-200"><div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 "><div class="flex h-screen flex-col justify-between"><header class="flex items-center justify-between py-10"><div><a href><div class="flex items-center justify-between"><div class=" h-6 text-2xl font-semibold sm:block text-primary-500">Connor Gamble</div></div></a></div>
-    <div class="flex items-center space-x-4 leading-5 sm:space-x-6"><a href="" class="hidden font-medium text-gray-100 sm:block">Home
-                </a><a href="experience" class="hidden font-medium text-gray-100 sm:block">Experience
-                </a><a href="projects" class="hidden font-medium text-gray-100 sm:block">Projects
-                </a><a href="personal" class="hidden font-medium text-gray-100 sm:block">Personal
-                </a><button id="toggle-button" aria-label="Toggle Menu" class="sm:hidden"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-8 w-8 text-gray-100"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg></button>
-        <div id="mobile-menu" class="fixed left-0 top-0 z-10 h-full w-full translate-x-full transform   duration-300 ease-in-out bg-gray-950 opacity-[0.98]"><div class="flex justify-end"><button id="close-mobile-menu-button" class="mr-8 mt-11 h-8 w-8" aria-label="Toggle Menu"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="text-gray-100"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg></button></div>
-            <nav class="fixed mt-8 h-full"><div class="px-12 py-4"><a href="" class="text-2xl font-bold tracking-widest text-gray-100">Home
-                            </a></div><div class="px-12 py-4"><a href="experience" class="text-2xl font-bold tracking-widest text-gray-100">Experience
-                            </a></div><div class="px-12 py-4"><a href="projects" class="text-2xl font-bold tracking-widest text-gray-100">Projects
-                            </a></div><div class="px-12 py-4"><a href="personal" class="text-2xl font-bold tracking-widest text-gray-100">Personal
-                            </a></div></nav></div></div></header>
-<script>
-    //👎 but what can I do? It's a static html. I can't use C# here.
-     const toggleMobileMenu = () => document.querySelector('#mobile-menu').classList.toggle('translate-x-full');
+<body><a class="skip-link" href="#main">Skip to content</a>
+<div class="backdrop" aria-hidden="true"></div>
 
-     document.querySelector('#toggle-button').addEventListener('click', toggleMobileMenu);
-     document.querySelector('#close-mobile-menu-button').addEventListener('click', toggleMobileMenu);
-</script>
+<header class="site-header" data-menu><div class="container site-header__inner"><a class="brand" href><span class="brand__mark" aria-hidden="true"></span>
+            Connor Gamble</a>
 
-        <main class="mb-auto"><div class="divide-y divide-gray-700"><div class="space-y-2 pb-8 pt-6 md:space-y-5"><h1 class="font-sans md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl">Godot</h1>
-        <p class="text-lg leading-7 text-gray-400">
-            Blog posts tagged by
-            <span class="text-primary-300">Godot</span></p></div>
-    <ul class="divide-y divide-gray-700"><li class="py-12"><article><div class="space-y-2 xl:grid xl:grid-cols-4 xl:items-baseline xl:space-y-0 xl:gap-8"><div class="space-y-4"><dl><dt class="sr-only">Published on</dt>
-                            <dd class="text-base font-medium leading-6 text-gray-400"><time datetime="2025-10-14T00:00:00.000">October 14, 2025</time></dd></dl><div><img src="Content/Blog/media/GamePortfolio/BoomerShooter/ShortBoi.png" alt="Untitled Boomer Shooter" class="w-full h-32 object-cover rounded-lg shadow-md" /></div></div>
+        <nav class="nav" aria-label="Main"><a href="" class="nav__link">Home</a><a href="experience" class="nav__link">Experience</a><a href="projects" class="nav__link">Projects</a><a href="personal" class="nav__link">Personal</a></nav>
 
-                    <div class="space-y-5 xl:col-span-3" style="margin-left:10px"><div class="space-y-6"><div><h2 class="text-2xl font-bold leading-8 tracking-tight"><a class="text-gray-100" href="blog/Untitled Boomer Shooter">Untitled Boomer Shooter</a></h2>
-                                <div class="flex flex-wrap mt-3"><a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/GamePortfolio">GamePortfolio</a><a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/Godot">Godot</a><a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/.Net">.Net</a><a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="tags/C%23">C#</a></div></div>
-                            <div class="prose max-w-none text-gray-400">My first foray into Godot as a Unity refugee</div></div>
-                        <div class="text-base font-medium leading-6"><a class="text-primary-500 hover:text-primary-400" aria-label="Read &quot;Untitled Boomer Shooter&quot;" href="blog/Untitled Boomer Shooter">Read more →</a></div></div></div></article></li></ul></div></main>
+        <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-toggle><svg class="icon nav-toggle__open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
+            <svg class="icon nav-toggle__close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
 
-        <footer><div class="mt-16 flex flex-col items-center"><div class="mb-3 flex space-x-4"><img src="/Tickle.png"></div>
-                <div class="mb-2 flex space-x-2 text-sm text-gray-400"><a>Connor G</a>
-                    <div>•</div>
-                    <div>© 2026</div></div></div></footer></div></div>
-        </body>
+    <nav id="mobile-menu" class="mobile-menu" aria-label="Mobile"><a style="--i: 0" href="" class="mobile-menu__link">Home</a><a style="--i: 1" href="experience" class="mobile-menu__link">Experience</a><a style="--i: 2" href="projects" class="mobile-menu__link">Projects</a><a style="--i: 3" href="personal" class="mobile-menu__link">Personal</a></nav></header>
 
+<main id="main" class="container page">
+<header class="page-header"><a class="back-link" href="tags"><svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 18l-6-6 6-6"></path></svg> All tags</a>
+    <h1 class="page-header__title"><span class="accent">#</span>Godot</h1>
+    <p class="page-header__sub">1 post tagged with Godot</p></header>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/csharp.min.js"></script>
-<script>
-    // Initialize highlight.js when DOM is ready and after potential dynamic content loads
-    document.addEventListener('DOMContentLoaded', function() {
-        hljs.highlightAll();
-    });
+<div class="post-grid"><article class="card reveal" style="--i: 0"><a class="card__media" href="blog/Untitled%20Boomer%20Shooter" tabindex="-1" aria-hidden="true"><img src="Content/Blog/media/GamePortfolio/BoomerShooter/ShortBoi.png" alt loading="lazy" /></a>
+    <div class="card__body"><time class="card__date" datetime="2025-10-14">October 14, 2025</time>
+        <h3 class="card__title"><a class="card__link" href="blog/Untitled%20Boomer%20Shooter">Untitled Boomer Shooter</a></h3>
+        <p class="card__lead">My first foray into Godot as a Unity refugee</p>
+        <ul class="chips chips--small"><li><a class="chip" href="tags/Godot">Godot</a></li><li><a class="chip" href="tags/.Net">.Net</a></li><li><a class="chip" href="tags/C%23">C#</a></li></ul>
+        <span class="card__more" aria-hidden="true">Read more <svg class="icon " viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></span></div></article></div></main>
 
-    // For static generated pages, also run immediately
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', function() {
-            hljs.highlightAll();
-        });
-    } else {
-        hljs.highlightAll();
-    }
+<footer class="site-footer"><div class="container site-footer__inner"><img class="site-footer__mascot" src="Tickle.png" alt width="40" height="40">
+        <p class="site-footer__text">Connor G <span aria-hidden="true">&middot;</span> &copy; 2026</p><a class="icon-link" href="https://github.com/ConnorGamble" aria-label="GitHub"><svg class="icon " viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg></a></div></footer>
+        
 
-    // Re-highlight when navigating in Blazor (for SPA behavior)
-    window.addEventListener('popstate', function() {
-        setTimeout(function() {
-            hljs.highlightAll();
-        }, 100);
-    });
-</script></html>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/csharp.min.js"></script>
+    <script src="js/site.js"></script></body></html>
