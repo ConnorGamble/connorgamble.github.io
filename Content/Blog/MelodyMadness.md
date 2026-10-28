@@ -6,7 +6,7 @@ tags: [ GamePortfolio, Unity, C#, .Net ]
 ---
 
 Melody Madness was developed (and not quite finished) in about six hours as part of the [GBJam 5](https://itch.io/jam/gbjam-5). 
-The theme was to make a game reminiscent of something you might see on a Game Boy, so it used a fixed resolution of 160px × 144px and only four colours.
+The theme was to make a game reminiscent of something you might see on a Game Boy, so it used a fixed resolution of 160 Ã— 144 px and only four colours.
 
 We, as a team of four, ended up making a Guitar Hero-style rhythm game which you can still download [here](https://maxtopan.itch.io/melody-madness)!
 ![MelodyMadness](media/GamePortfolio/MelodyMadness/MainMenu.png)

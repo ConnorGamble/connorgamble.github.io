@@ -1,0 +1,12 @@
+<header class="page-header">
+    <h1 class="page-header__title"><AccentText Text="@(Intro?.FrontMatter.Title ?? Fallback)" Accent="@Intro?.FrontMatter.Accent" /></h1>
+    @if (!string.IsNullOrWhiteSpace(Intro?.Html))
+    {
+        <div class="prose page-header__intro">@((MarkupString)Intro.Html)</div>
+    }
+</header>
+
+@code {
+    [Parameter] public PageContent? Intro { get; set; }
+    [Parameter, EditorRequired] public string Fallback { get; set; } = "";
+}

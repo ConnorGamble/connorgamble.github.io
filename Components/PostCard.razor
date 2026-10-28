@@ -1,0 +1,34 @@
+@inject SiteData Site
+
+@{
+    var cover = Post.CoverImage();
+    var href = $"blog/{Uri.EscapeDataString(Post.Url)}";
+}
+
+<article class="card reveal" style="--i: @Index">
+    @* Image links to the post too; hidden from keyboard and screen readers since the title link already covers it. *@
+    <a class="card__media" href="@href" tabindex="-1" aria-hidden="true">
+        @if (cover is not null)
+        {
+            <img src="@cover" alt="" loading="lazy" />
+        }
+        else
+        {
+            <span class="card__placeholder">@Post.FrontMatter.Title.FirstOrDefault()</span>
+        }
+    </a>
+    <div class="card__body">
+        <time class="card__date" datetime="@Post.FrontMatter.Published.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)">
+            @Post.FrontMatter.Published.ToString("MMMM d, yyyy", CultureInfo.GetCultureInfo("en-GB"))
+        </time>
+        <h3 class="card__title"><a class="card__link" href="@href">@Post.FrontMatter.Title</a></h3>
+        <p class="card__lead">@Post.FrontMatter.Lead</p>
+        <TagList Tags="Post.DisplayTags(Site)" />
+        <span class="card__more" aria-hidden="true">Read more <Icon Name="Icon.Icons.ArrowRight" /></span>
+    </div>
+</article>
+
+@code {
+    [Parameter, EditorRequired] public Post<PostFrontMatter> Post { get; set; } = default!;
+    [Parameter] public int Index { get; set; }
+}

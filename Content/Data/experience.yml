@@ -1,0 +1,46 @@
+# Shown on /experience. Roles marked `current: true` go under "Current role", the rest under "Previous roles".
+# `note` is optional markdown shown under the highlights.
+
+roles:
+  - title: Software Engineer
+    org: PebblePad
+    period: April 2021 - Present
+    current: true
+    highlights:
+      - Introduced a Personal Data tag across every company data structure, backed by analysers that enforce it on all Mongo and Postgres properties, so personal data is traceable and ready for anonymisation.
+      - Delivered a compliance tool that finds and deletes records that should no longer be held, and a recovery tool that restored records from backup after a legacy purging system removed them.
+      - Built tooling for production-scale testing, including a bulk data generator producing multi-GB datasets (used to test the compliance tool's performance) and a schema drift tool that generates scripts to reconcile two schemas.
+      - Migrated caching from local to network caches (Valkey) to support horizontal scaling, moved the platform to LTI 1.3, and cut tech debt by decommissioning legacy applications.
+      - Built and tested a bronze data pipeline in Python, and delivered a user engagement feature that bulk fetches data and presents it with saving and filtering.
+      - Ran team retros with managers, tracking delivery metrics such as time blocked and points completed, and acting on them to keep delivery smooth and the team happy.
+
+  - title: Backend Software Engineer
+    org: Codeweavers
+    period: August 2019 - April 2021
+    highlights:
+      - Worked in the proposals team, integrating new lenders from scratch and maintaining integrations for existing clients.
+      - Migrated multiple clients from a legacy proposal polling system to a newly reworked one.
+      - Built and maintained backend services, individually and within a team, delivering new features while maintaining legacy code.
+      - Diagnosed and fixed customer-reported issues directly, translating business problems into platform solutions for product owners, account managers and end users.
+      - Buddied and helped train apprentices joining the company, supporting their transition into the world of work.
+
+  - title: Developer
+    org: Fasetto
+    period: August 2017 - May 2019
+    highlights:
+      - Helped build the Fasetto app, a cross-platform Android and iOS client built with Xamarin that let users select a box on the network and connect straight into its live slideshow.
+      - Worked with a team to create the slideshow software itself, allowing people to connect to the network and view slides live.
+      - Delivered feature work across mobile and web, including web pages built with Bridge.NET, SCSS and HTML.
+      - Supported the product lifecycle from initial prototyping through to final polish and ongoing support.
+      - Mentored junior team members and supported their development.
+
+education:
+  - title: Anglia Ruskin University
+    org: Computer Gaming Technology BSc (Hons)
+    period: 1st Class Honours, graduating 2017
+    highlights:
+      - Technical foundation in programming
+      - 3 years hands on experience with Unity
+      - Foundational 3D modelling experience using 3DS Max
+      - Production experience meant to mimic the entire lifecycle of a game, from pitching to polish
+    note: You can see a list of prototypes and work [here](gameportfolio).

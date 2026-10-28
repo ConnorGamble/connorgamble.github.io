@@ -1,0 +1,60 @@
+@page "/{Slug}"
+@page "/{Slug}/all"
+@inject SiteData Site
+@inject PageContentService Pages
+@inject NavigationManager Nav
+@inject BlazorStaticContentService<PostFrontMatter> Content
+
+@if (section is null)
+{
+    <SiteHead Title="Page not found" />
+    <PageHeader Fallback="Page not found" />
+    <p class="empty">There's nothing here. <a href="">Head home</a>?</p>
+    return;
+}
+
+@{
+    var intro = Pages.Get(section.Slug);
+    var showAll = Nav.ToBaseRelativePath(Nav.Uri).TrimEnd('/').EndsWith("/all", StringComparison.OrdinalIgnoreCase);
+    var lists = new[] { section }
+        .Concat(section.Include.Select(Site.FindSection).OfType<Section>())
+        .ToList();
+}
+
+<SiteHead Title="@intro?.FrontMatter.PageTitle" Description="@intro?.FrontMatter.Description" />
+
+<PageHeader Intro="intro" Fallback="@section.Name" />
+
+@foreach (var list in lists)
+{
+    var posts = Content.Posts.InSection(list.Key).ToList();
+    var limit = list == section && !showAll ? list.Limit : null;
+
+    <section class="post-list">
+        @if (lists.Count > 1)
+        {
+            <div class="post-list__header reveal">
+                <h2 class="post-list__title">@(list.ListHeading ?? list.Name)</h2>
+                @if (!string.IsNullOrWhiteSpace(list.ListDescription))
+                {
+                    <p class="post-list__description">@list.ListDescription</p>
+                }
+            </div>
+        }
+
+        <PostGrid Posts="limit.HasValue ? posts.Take(limit.Value) : posts" />
+
+        @if (limit.HasValue && posts.Count > limit)
+        {
+            <a class="button button--ghost post-list__more" href="@section.Slug/all">See all @posts.Count posts <Icon Name="Icon.Icons.ArrowRight" /></a>
+        }
+    </section>
+}
+
+@code {
+    [Parameter] public string? Slug { get; set; }
+
+    Section? section;
+
+    protected override void OnParametersSet() => section = Site.FindSectionBySlug(Slug);
+}

@@ -1,0 +1,15 @@
+@inject BlazorStaticContentService<PostFrontMatter> Content
+
+@if (Tags.Any())
+{
+    <ul class="chips chips--small">
+        @foreach (var tag in Tags)
+        {
+            <li><a class="chip" href="@Content.Options.Tags.TagsPageUrl/@tag.EncodedName">@tag.Name</a></li>
+        }
+    </ul>
+}
+
+@code {
+    [Parameter, EditorRequired] public IEnumerable<Tag> Tags { get; set; } = [];
+}

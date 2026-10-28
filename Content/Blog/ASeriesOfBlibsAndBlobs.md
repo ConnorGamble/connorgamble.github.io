@@ -15,7 +15,7 @@ Each has a different ability:
 Because these blobs can act independently, they needed the ability to split and merge so you can control them individually.
 ![SplittingAndMerging](media/GamePortfolio/ASeriesOfBlibsAndBlobs/SplittingAndMerging.gif)
 
-Upon level completion, the blobs move to the next level by falling into the infinite abyss — there is a large hit collider beneath the entire level. This was done to make level transitions as seamless as possible without returning the player to a menu.
+Upon level completion, the blobs move to the next level by falling into the infinite abyss - there is a large hit collider beneath the entire level. This was done to make level transitions as seamless as possible without returning the player to a menu.
 
 Visually, I experimented with shaders and aimed for an [Antichamber](https://store.steampowered.com/app/219890/Antichamber/) sort of look: very clean colours and strong outlines. This presented its own challenges, such as ensuring the player can see which blobs are currently active.
 ![AllBlobsTogether](media/GamePortfolio/ASeriesOfBlibsAndBlobs/ShadersTogether.png)

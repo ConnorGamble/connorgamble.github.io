@@ -1,25 +1,24 @@
 ﻿@inherits LayoutComponentBase
+@inject SiteData Site
 
-<div class="mx-auto max-w-3xl px-4 sm:px-6 xl:max-w-5xl xl:px-0 ">
-    <div class="flex h-screen flex-col justify-between">
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="backdrop" aria-hidden="true"></div>
 
-        <NavMenu/>
+<NavMenu />
 
-        <main class="mb-auto">
-            @Body
-        </main>
+<main id="main" class="container page">
+    @Body
+</main>
 
-        <footer>
-            <div class="mt-16 flex flex-col items-center">
-                <div class="mb-3 flex space-x-4">
-                    <img src="/Tickle.png"
-                </div>
-                <div class="mb-2 flex space-x-2 text-sm text-gray-400">
-                    <a>Connor G</a>
-                    <div>•</div>
-                    <div>© @DateTime.Now.Year</div>
-                </div>
-            </div>
-        </footer>
+<footer class="site-footer">
+    <div class="container site-footer__inner">
+        <img class="site-footer__mascot" src="Tickle.png" alt="" width="40" height="40" />
+        <p class="site-footer__text">@Site.Info.ShortName <span aria-hidden="true">&middot;</span> &copy; @DateTime.Now.Year</p>
+        @if (!string.IsNullOrEmpty(Site.Info.GitHub))
+        {
+            <a class="icon-link" href="@Site.Info.GitHub" aria-label="GitHub">
+                <Icon Name="Icon.Icons.GitHub" />
+            </a>
+        }
     </div>
-</div>
+</footer>

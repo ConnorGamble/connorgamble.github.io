@@ -2,7 +2,7 @@
 title: ABAA - The agility tracking website
 lead: A Blazor application which is used to record agility dog class times as well as help manage the event.
 published: 2025-10-14
-tags: [ Projects, Blazor, .Net ,C#]
+tags: [ Projects, Blazor, .Net, C# ]
 ---
 
 ### Full disclaimer: I am **not** a frontend developer and fighting pixels is not one of my best skills, so expect some minor imperfections!

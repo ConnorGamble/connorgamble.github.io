@@ -1,67 +1,55 @@
-﻿@page "/"
+@page "/"
+@inject SiteData Site
+@inject PageContentService Pages
 
-<HeadContent>
-    <title>Connor Gamble</title>
-    <meta name="description" content="C# Developer and avid gamer" />
-    <meta name="keywords" content="Connor Gamble" />
-    <meta name="author" content="Connor Gamble" />
-</HeadContent>
+@{
+    var intro = Pages.Get("home");
+    var firstSection = Site.NavSections.FirstOrDefault();
+}
 
-<!-- Hero Section -->
-<div class="space-y-2 pb-4 pt-6 md:space-y-3">
-    <h1 class="text-3xl font-extrabold leading-9 tracking-tight text-foreground sm:text-4xl sm:leading-10 md:text-5xl md:leading-12">
-        Yo, I'm <span class="text-primary-500">Connor</span>
-    </h1>
-</div>
+<SiteHead Title="@intro?.FrontMatter.PageTitle" Description="@intro?.FrontMatter.Description" />
 
-<!-- About Me Section -->
-<div class="flex flex-col-reverse items-start space-y-4 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-    <div class="prose max-w-none pb-4 pt-4 xl:col-span-2">
-        <p class="text-base text-gray-300 mb-4">
-            I have almost ten years worth of experience within C# that ranges from building customer facing features in order to fulfil their requirements all the way down to deep backend architectural migrations which support scaling architecture.
-        </p>
-        <p class="text-base text-gray-300 mb-4">
-            Whether I’m hacking away at technical debt in an older C# codebase or building something new with Blazor and AWS, I find it's best to approach problems head on and iterate until there's a solution which feels right.
-        </p>
-        <p class="text-base text-gray-300 mb-4">
-            This mindset carries into my game projects, regardless of engine, where I enjoy exploring ideas, improving the things I make and learning new tools.
-        </p>
-        <!-- Core Skills -->
-        <div class="mb-4">
-            <h3 class="text-lg font-bold text-foreground mb-3">Core Skillset</h3>
-            <div class="flex flex-wrap gap-2">
-                <span class="skill-tag">C#</span>
-                <span class="skill-tag">ASP.NET Core</span>
-                <span class="skill-tag">ASP.NET Framework</span>
-                <span class="skill-tag">Blazor Server</span>
-                <span class="skill-tag">PostgreSQL</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">MongoDB</span>
-                <span class="skill-tag">AWS Lambda</span>
-                <span class="skill-tag">AWS S3</span>
-                <span class="skill-tag">Azure DevOps</span>
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">Godot</span>
-                <span class="skill-tag">Unity</span>
-                <span class="skill-tag">Python</span>
-            </div>
+<section class="hero">
+    <div class="hero__text">
+        <h1 class="hero__title"><AccentText Text="@(intro?.FrontMatter.Title ?? Site.Info.Title)" Accent="@intro?.FrontMatter.Accent" /></h1>
+
+        @if (intro is not null)
+        {
+            <div class="prose hero__intro">@((MarkupString)intro.Html)</div>
+        }
+
+        <div class="hero__actions">
+            <a class="button" href="experience">See my experience <Icon Name="Icon.Icons.ArrowRight" /></a>
+            @if (firstSection is not null)
+            {
+                <a class="button button--ghost" href="@firstSection.Slug">Browse @firstSection.Name.ToLowerInvariant()</a>
+            }
         </div>
     </div>
 
-    <!-- Contact Information Card -->
-    <div class="w-full xl:col-span-1">
-        <div class="items-start space-y-2 xl:grid xl:grid-cols-1 xl:gap-x-8 xl:space-y-0">
-            <div class="flex flex-col items-center space-y-3 pt-0">
-                <img src="images/profile.png" alt="Chibi Connor"
-                     class="h-32 w-32 rounded-full object-cover shadow-lg border-2 border-primary-500" />
-
-                <div class="space-y-2 text-center">
-                    <div>
-                        <p class="text-gray-400 text-sm">Stafford based C# developer</p>
-                    </div>
-                </div>
-            </div>
+    <aside class="profile-card reveal">
+        <div class="avatar">
+            <img src="@Site.Info.Avatar" alt="@Site.Info.AvatarAlt" width="160" height="160" />
         </div>
-    </div>
-    <br/>
-</div>
+        <p class="profile-card__tagline">@Site.Info.Tagline</p>
+        @if (!string.IsNullOrEmpty(Site.Info.GitHub))
+        {
+            <a class="profile-card__link" href="@Site.Info.GitHub">
+                <Icon Name="Icon.Icons.GitHub" /> GitHub
+            </a>
+        }
+    </aside>
+</section>
+
+@if (Site.Info.Skills.Count > 0)
+{
+    <section class="skills reveal">
+        <h2 class="label">Core skillset</h2>
+        <ul class="chips">
+            @foreach (var (skill, i) in Site.Info.Skills.Select((skill, i) => (skill, i)))
+            {
+                <li class="chip chip--skill" style="--i: @i">@skill</li>
+            }
+        </ul>
+    </section>
+}

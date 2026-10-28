@@ -1,6 +1,6 @@
 ---
-title: Easy Deliver Co.
-lead: A cosy deliver game hiding a much darker secret
+title: Easy Delivery Co.
+lead: A cosy delivery game hiding a much darker secret
 published: 2026-05-30
 tags:
   - GameReviews
@@ -9,7 +9,7 @@ tags:
 # D - Describe
 ***
 
-Easy Deliver Co. is a cosy delivery game, dressed up in PS1 style graphics and a lot of charm. 
+Easy Delivery Co. is a cosy delivery game, dressed up in PS1 style graphics and a lot of charm. 
 The core gameplay loop sees you play as a cat, the new delivery driver in town. (alright he's got no thumbs to drive but you've probably palmed the steering wheel before, don't think too much about it)
 You pickup a parcel at point A, load it up in your trusty truck and deliver it to point B. On the way, you'll be fighting bad weather and your own driving skills due to the physics. Below the surface, and closer to the end of the game, it hides a much more harrowing reality for those living in this snowy town.
 
@@ -20,7 +20,7 @@ I came into it like the storefront pitches it, just a cosy game just about drivi
 ## Moment to moment gameplay
 It's worth mentioning upfront that there is no combat in this game. The main elements of challenge comes from the weather and road conditions. (Or, offroad conditions, in the case of some parts of the game). So naturally, the main gameplay loop consists of driving.
 
-From the get-go the driving is fun, it feels satisfying enough to keep you engaged which is not to be understated since you're doing it for a good majority of the game. The physics of driving the deliver truck on it's own is well crafted, it feels heavy and clunky in a way which makes sense for a vehicle of it's size. (the header of this page shows the truck)
+From the get-go the driving is fun, it feels satisfying enough to keep you engaged which is not to be understated since you're doing it for a good majority of the game. The physics of driving the delivery truck on it's own is well crafted, it feels heavy and clunky in a way which makes sense for a vehicle of it's size. (the header of this page shows the truck)
 
 Add to this that the packages you pick up are **not** locked into the back. That's right when you put a package into the back of your truck it's able to move. It can slide around. It can tip over. It can balance on the guardrail as you take a corner a little too fast causing you to lose seven out of the ten pizzas you were meant to be delivering. That's definitely not based on a true story, I am a responsible delivery driver after all.
 
@@ -130,5 +130,5 @@ The good ending involves you purchasing a recovery disk which you can use to fix
 
 The bad ending is easily the thing which will stick with me the most about this game, the atmosphere cannot be matched.
 # TL;DR
-Easy Deliver Co. on the surface is a relaxing delivery game which doesn't outstay it's welcome. Clocking in around 6 hours or so for the 100% achievements, it's short and to the point.
+Easy Delivery Co. on the surface is a relaxing delivery game which doesn't outstay it's welcome. Clocking in around 6 hours or so for the 100% achievements, it's short and to the point.
 The story, although not particularly complex or emotionally intense, still provides enough satisfaction that I'd recommend experiencing it yourself, even if it's just for an afternoon.

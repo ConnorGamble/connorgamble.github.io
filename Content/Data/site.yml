@@ -1,0 +1,26 @@
+# Site-wide details. Used for the default page title, meta tags, home page and footer.
+title: Connor Gamble
+description: C# Developer and avid gamer
+author: Connor Gamble
+shortName: Connor G
+tagline: Stafford based C# developer
+avatar: images/profile.png
+avatarAlt: Chibi Connor
+gitHub: https://github.com/ConnorGamble
+
+# Shown as chips on the home page.
+skills:
+  - C#
+  - ASP.NET Core
+  - ASP.NET Framework
+  - Blazor Server
+  - PostgreSQL
+  - SQL
+  - MongoDB
+  - AWS Lambda
+  - AWS S3
+  - Azure DevOps
+  - Git
+  - Godot
+  - Unity
+  - Python

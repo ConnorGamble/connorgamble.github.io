@@ -1,0 +1,60 @@
+@page "/blog/{FileName}"
+@inject SiteData Site
+@inject BlazorStaticContentService<PostFrontMatter> Content
+
+@if (post is null)
+{
+    <SiteHead Title="Post not found" />
+    <PageHeader Fallback="Post not found" />
+    <p class="empty">That post doesn't exist (any more?). <a href="">Head home</a>.</p>
+    return;
+}
+
+@{
+    var fm = post.FrontMatter;
+    var section = Site.FindSection(post.SectionKey());
+    var backHref = section?.Slug ?? "";
+    var backLabel = section?.Name ?? "Home";
+}
+
+<SiteHead Title="@(fm.PageTitle ?? fm.Title)" Description="@fm.Lead" Type="article">
+    <meta name="keywords" content="@string.Join(", ", fm.Tags)" />
+    <meta property="article:published_time" content="@fm.Published.ToString("o", CultureInfo.InvariantCulture)" />
+    @foreach (var tag in fm.Tags)
+    {
+        <meta property="article:tag" content="@tag" />
+    }
+</SiteHead>
+
+<article class="post">
+    <header class="post__header">
+        <a class="back-link" href="@backHref"><Icon Name="Icon.Icons.ArrowLeft" /> Back to @backLabel.ToLowerInvariant()</a>
+        <h1 class="post__title">@fm.Title</h1>
+        @if (!string.IsNullOrWhiteSpace(fm.Lead))
+        {
+            <p class="post__lead">@fm.Lead</p>
+        }
+        <div class="post__meta">
+            <time datetime="@fm.Published.ToString("yyyy-MM-dd", CultureInfo.InvariantCulture)">@fm.Published.ToString("MMMM d, yyyy", CultureInfo.GetCultureInfo("en-GB"))</time>
+            <span aria-hidden="true">&middot;</span>
+            <span>@post.ReadingMinutes() min read</span>
+        </div>
+        <TagList Tags="post.DisplayTags(Site)" />
+    </header>
+
+    <div class="prose post__body">
+        @((MarkupString)post.HtmlContent)
+    </div>
+
+    <footer class="post__footer">
+        <a class="back-link" href="@backHref"><Icon Name="Icon.Icons.ArrowLeft" /> Back to @backLabel.ToLowerInvariant()</a>
+    </footer>
+</article>
+
+@code {
+    [Parameter] public string? FileName { get; set; }
+
+    Post<PostFrontMatter>? post;
+
+    protected override void OnParametersSet() => post = Content.Posts.FirstOrDefault(p => p.Url == FileName);
+}

@@ -3,6 +3,7 @@ title: Video game title
 lead: Description
 published: 2020-01-01
 tags: [ Template, GameReviews ]
+draft: true # template only, copy it to start a new review
 ---
 ![Video game Header](connorgamble.github.com)
 # D - Describe

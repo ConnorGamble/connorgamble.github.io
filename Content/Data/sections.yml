@@ -1,0 +1,34 @@
+# Each section is a page at /{slug} listing posts whose `section:` front matter (or first tag) matches `key`.
+# The intro at the top of the page comes from Content/Pages/{slug}.md if that file exists.
+#
+#   key:             matches a post's section (required)
+#   name:            nav label and default page heading (required)
+#   slug:            URL, defaults to the key in lower case
+#   nav:             show in the top nav (Home and Experience are always shown first)
+#   limit:           only show the latest N posts, with a link to /{slug}/all
+#   listHeading:     heading for this section's list when a page shows more than one list
+#   listDescription: line under that heading
+#   include:         other section keys to list underneath this one's posts
+
+- key: Projects
+  name: Projects
+  nav: true
+  listHeading: Software
+  listDescription: Some software projects I am (or have) worked on.
+  include: [GamePortfolio]
+
+- key: Personal
+  name: Personal
+  nav: true
+  limit: 3
+
+- key: GamePortfolio
+  name: Game Portfolio
+  slug: gameportfolio
+  listHeading: Games
+  listDescription: Game prototypes and vertical slices which I have worked on, mostly from university.
+
+# Work in progress, so kept out of the nav for now.
+- key: GameReviews
+  name: Game Reviews
+  slug: gamereviews

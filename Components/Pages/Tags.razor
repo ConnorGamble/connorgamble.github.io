@@ -1,50 +1,46 @@
-@page "/tags/{tagName}"
 @page "/tags"
-@using BlazorStatic
-@using BlazorStatic.Services
-@using System.Net
-@inject BlazorStaticContentService<BlogFrontMatter> blazorStaticContentService
+@page "/tags/{TagName}"
+@inject SiteData Site
+@inject BlazorStaticContentService<PostFrontMatter> Content
 
-@if (TagName == null)
+@if (TagName is null)
 {
-    <div class="flex flex-wrap justify-evenly gap-1">
-        @{
-            var tagsWithCount = blazorStaticContentService.Posts
-                .SelectMany(x => x.Tags)
-                .GroupBy(x => x)
-                .Select(group => new { Tag = group.Key, Count = group.Count() })
-                .OrderByDescending(x => x.Count);
+    var tagsWithCount = Content.Posts
+        .SelectMany(p => p.Tags)
+        .Where(t => Site.FindSection(t.Name) is null)
+        .GroupBy(t => t.Name)
+        .Select(g => (Tag: g.First(), Count: g.Count()))
+        .OrderByDescending(x => x.Count)
+        .ThenBy(x => x.Tag.Name);
 
-            foreach(var tagGroup in tagsWithCount)
-            {
-                <a class="text-primary-500 hover:text-primary-400 mr-3 text-sm font-medium uppercase" href="@($"{blazorStaticContentService.Options.Tags.TagsPageUrl}/{tagGroup.Tag.EncodedName}")">@tagGroup.Tag.Name</a>
-            }
+    <SiteHead />
+    <PageHeader Fallback="Tags" />
+    <ul class="chips chips--cloud">
+        @foreach (var (tag, count) in tagsWithCount)
+        {
+            <li><a class="chip" href="@Content.Options.Tags.TagsPageUrl/@tag.EncodedName">@tag.Name <span class="chip__count">@count</span></a></li>
         }
-    </div>
+    </ul>
     return;
 }
 
+@{
+    var posts = Content.Posts
+        .Where(p => p.Tags.Any(t => t.EncodedName == TagName || t.Name == TagName))
+        .OrderByDescending(p => p.FrontMatter.Published)
+        .ToList();
+    var name = posts.SelectMany(p => p.Tags).FirstOrDefault(t => t.EncodedName == TagName || t.Name == TagName)?.Name ?? TagName;
+}
 
-<div class="divide-y divide-gray-700">
-    <div class="space-y-2 pb-8 pt-6 md:space-y-5">
-        <h1 class="font-sans md:leading-14 text-3xl font-extrabold leading-9 tracking-tight text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl">@TagName</h1>
-        <p class="text-lg leading-7 text-gray-400">
-            Blog posts tagged by
-            <span class="text-primary-300">@TagName</span>
-        </p>
-    </div>
-    <PostsList PostType="@(TagName)" />
-</div>
+<SiteHead />
+<header class="page-header">
+    <a class="back-link" href="@Content.Options.Tags.TagsPageUrl"><Icon Name="Icon.Icons.ArrowLeft" /> All tags</a>
+    <h1 class="page-header__title"><span class="accent">#</span>@name</h1>
+    <p class="page-header__sub">@posts.Count @(posts.Count == 1 ? "post" : "posts") tagged with @name</p>
+</header>
+
+<PostGrid Posts="posts" />
 
 @code {
     [Parameter] public string? TagName { get; set; }
-
-    List<Post<BlogFrontMatter>>? posts;
-
-    protected override void OnInitialized()
-    {
-        if (string.IsNullOrWhiteSpace(TagName)) return;
-        posts = blazorStaticContentService.Posts.Where(x => x.Tags.Any(y => y.EncodedName == TagName)).ToList();
-    }
-
 }

@@ -1,0 +1,20 @@
+@* Title and meta tags for a page. Title defaults to the site title. *@
+@inject SiteData Site
+
+<HeadContent>
+    <title>@(Title ?? Site.Info.Title)</title>
+    <meta name="description" content="@(Description ?? Site.Info.Description)" />
+    <meta name="author" content="@Site.Info.Author" />
+    <meta property="og:type" content="@Type" />
+    <meta property="og:site_name" content="@Site.Info.Title" />
+    <meta property="og:title" content="@(Title ?? Site.Info.Title)" />
+    <meta property="og:description" content="@(Description ?? Site.Info.Description)" />
+    @ChildContent
+</HeadContent>
+
+@code {
+    [Parameter] public string? Title { get; set; }
+    [Parameter] public string? Description { get; set; }
+    [Parameter] public string Type { get; set; } = "website";
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+}

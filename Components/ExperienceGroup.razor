@@ -1,0 +1,36 @@
+@if (Entries.Any())
+{
+    <section class="timeline-group">
+        <h2 class="label">@Heading</h2>
+        <ol class="timeline">
+            @foreach (var entry in Entries)
+            {
+                <li class="timeline__item reveal @(entry.Current ? "is-current" : "")">
+                    <div class="timeline__head">
+                        <h3 class="timeline__title">@entry.Title</h3>
+                        <span class="timeline__period">@entry.Period</span>
+                    </div>
+                    <p class="timeline__org">@entry.Org</p>
+                    @if (entry.Highlights.Count > 0)
+                    {
+                        <ul class="timeline__highlights">
+                            @foreach (var highlight in entry.Highlights)
+                            {
+                                <li>@highlight</li>
+                            }
+                        </ul>
+                    }
+                    @if (!string.IsNullOrWhiteSpace(entry.Note))
+                    {
+                        <div class="prose timeline__note">@((MarkupString)PageContentService.Render(entry.Note))</div>
+                    }
+                </li>
+            }
+        </ol>
+    </section>
+}
+
+@code {
+    [Parameter, EditorRequired] public string Heading { get; set; } = "";
+    [Parameter, EditorRequired] public IEnumerable<ExperienceEntry> Entries { get; set; } = [];
+}

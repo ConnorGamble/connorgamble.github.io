@@ -1,0 +1,13 @@
+@if (string.IsNullOrEmpty(Accent) || Text.IndexOf(Accent, StringComparison.Ordinal) is var at && at < 0)
+{
+    @Text
+}
+else
+{
+    @Text[..at]<span class="accent">@Accent</span>@Text[(at + Accent.Length)..]
+}
+
+@code {
+    [Parameter, EditorRequired] public string Text { get; set; } = "";
+    [Parameter] public string? Accent { get; set; }
+}

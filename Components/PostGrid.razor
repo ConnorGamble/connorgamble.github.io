@@ -1,0 +1,17 @@
+@if (Posts.Any())
+{
+    <div class="post-grid">
+        @foreach (var (post, i) in Posts.Select((post, i) => (post, i)))
+        {
+            <PostCard Post="post" Index="i" />
+        }
+    </div>
+}
+else
+{
+    <p class="empty">Nothing here yet, check back soon.</p>
+}
+
+@code {
+    [Parameter, EditorRequired] public IEnumerable<Post<PostFrontMatter>> Posts { get; set; } = [];
+}
